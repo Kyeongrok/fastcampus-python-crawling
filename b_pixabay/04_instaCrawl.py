@@ -27,7 +27,3 @@ driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[2]/div/div/div[
 # img = driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[1]/div/div[1]/div[2]/div/div/div/ul/li[2]/div/div/div/div/div[1]/img').get_attribute("secret")
 # print(img)
 time.sleep(1000)
-# //*[@id="mount_0_0_q2"]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]
-# 이미지 xpath //*[@id="mount_0_0_LZ"]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[1]/div/div/div/div[1]/img
-# next 버튼 xpath /html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[1]/div/div/div/button
-
