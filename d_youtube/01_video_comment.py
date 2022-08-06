@@ -6,11 +6,13 @@ import os
 
 api_key = os.getenv("YOUTUBE_API_KEY")
 print(api_key)
-video_id = 'exgO1LFl9x8'
+video_id = 'Efa6uRq-o48'
+playlist_id = 'PLLoad6xLO6fHniD8UaLpaPdWA1Nv_ZTa3'
 
 comments = list()
 api_obj = build('youtube', 'v3', developerKey=api_key)
 response = api_obj.commentThreads().list(part='snippet,replies', videoId=video_id, maxResults=100).execute()
+
 
 while response:
     for item in response['items']:
