@@ -4,9 +4,10 @@ from selenium.webdriver.common.keys import Keys
 import time
 import chromedriver_autoinstaller
 
-insta_id = "01028351203"
-insta_pw = "gkawjdgh98!"
-
+# insta_id = ""
+# insta_pw = ""
+insta_id = ""
+insta_pw = ""
 chromedriver_autoinstaller.install()
 driver = webdriver.Chrome()
 driver.implicitly_wait(5) # element를 모두 로드할 때 까지 기다려줘야함

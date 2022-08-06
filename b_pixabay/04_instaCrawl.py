@@ -4,8 +4,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 import chromedriver_autoinstaller
 
-insta_id = "paulham98@naver.com"
-insta_pw = "skull034456!"
+insta_id = ""
+insta_pw = ""
 search = "고양이"
 
 chromedriver_autoinstaller.install()
