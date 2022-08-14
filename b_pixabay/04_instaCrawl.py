@@ -16,7 +16,8 @@ driver.get(url=Url)
 # 인스타 로그인
 driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys(insta_id)
 driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys(insta_pw)
-driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[3]/button').click()
+driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[3]/button/div').send_keys(Keys.ENTER)
+#  /html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[3]/button/div
 driver.find_element(By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input').send_keys(search)
 time.sleep(3)
 driver.find_element(By.XPATH, '//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]')\
