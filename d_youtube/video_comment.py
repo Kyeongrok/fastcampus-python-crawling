@@ -8,9 +8,9 @@ api_key = os.getenv("YOUTUBE_API_KEY")
 api_obj = build('youtube', 'v3', developerKey=api_key)
 api_server_name = "youtube"
 # 웹 어플리케이션
-
+# client_secrets_file = "client_secret_488418297-7tidrd0nl86hqrdti3parb2d6rdbjb1f.apps.googleusercontent.com (4).json"
 # 데스크톱 어플리케이션
-client_secrets_file = ""
+client_secrets_file = "client_secret_488418297-otapo0hisu0kvje6fp9s6l2s502n6024.apps.googleusercontent.com.json"
 scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
