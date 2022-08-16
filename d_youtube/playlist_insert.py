@@ -7,7 +7,7 @@ import os
 
 # 내 채널 id
 channel_q = "girl's generation"
-client_secrets_file = "client_secret_488418297-otapo0hisu0kvje6fp9s6l2s502n6024.apps.googleusercontent.com.json"
+client_secrets_file = "client_secret_desktop.json"
 scopes = "https://www.googleapis.com/auth/youtube"
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
