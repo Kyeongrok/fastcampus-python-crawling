@@ -9,8 +9,6 @@ from googleapiclient.discovery import build
 import os
 
 api_key = os.getenv("YOUTUBE_API_KEY")
-video_id = 'Efa6uRq-o48'
-playlist_id = 'PLLoad6xLO6fHniD8UaLpaPdWA1Nv_ZTa3'
 api_obj = build('youtube', 'v3', developerKey=api_key)
 
 
@@ -57,39 +55,24 @@ def get_video_info(i):
         id=i,
     ).execute()
     infos = []
-    print(video_lifo['items']['kind'])
-    print(video_lifo['items'])
+    result = video_lifo.get('items', [])[0]
+    print(result['snippet']['title'] + ' ' + result['snippet']['channelId'])
+    print(result['statistics']['viewCount'])
+    print(result['statistics']['likeCount'])
+    print(result['statistics']['commentCount'])
+    infos.append(result['snippet']['title'])
+    infos.append(result['snippet']['channelId'])
+    infos.append(result['statistics']['viewCount'])
+    infos.append(result['statistics']['likeCount'])
+    infos.append(result['statistics']['commentCount'])
 
 
-# print(get_channel_info("girl's generation"))
-# channel_id = get_channel_info("girl's generation")[0]
-v_list = get_videos_list('슈카월드')
-v_id = list(v_list[0].values())[0]
-get_video_info(v_id)
-# print(v_list)
-# print(list(v_list[0].values()))
-
-
-# comments = api_obj.comment
-# response = api_obj.commentThreads().list(
-#     part='snippet,replies',
-#     videoId=video_id,
-#     maxResults=100).execute()
-# while response:
-#     for item in response['items']:
-#         comment = item['snippet']['topLevelComment']['snippet']
-#         comments.append(
-#             [comment['textDisplay'], comment['authorDisplayName'], comment['publishedAt'], comment['likeCount']])
-#         if item['snippet']['totalReplyCount'] > 0:
-#             for reply_item in item['replies']['comments']:
-#                 reply = reply_item['snippet']
-#                 comments.append(
-#                     [reply['textDisplay'], reply['authorDisplayName'], reply['publishedAt'], reply['likeCount']])
-#
-#     if 'nextPageToken' in response:
-#         response = api_obj.commentThreads().list(part='snippet,replies', videoId=video_id,
-#                                                  pageToken=response['nextPageToken'], maxResults=100).execute()
-#     else:
-#         break
-#
-# print(comments)
+if __name__ == '__main__':
+    # print(get_channel_info("girl's generation"))
+    # channel_id = get_channel_info("girl's generation")[0]
+    v_list = get_videos_list('슈카월드')
+    # 첫번째 videoId 가져오기
+    v_id = list(v_list[0].values())[0]
+    get_video_info(v_id)
+    # print(v_list)
+    # print(list(v_list[0].values()))
