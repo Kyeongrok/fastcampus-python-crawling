@@ -21,6 +21,7 @@ youtube = googleapiclient.discovery.build(
 )
 
 
+# 이거 막 돌리다보면 youtube쪽에서 막을 수도 있음
 def get_playlist(ch_id):
     pl_list = []
     response = api_obj.playlists().list(
@@ -31,6 +32,7 @@ def get_playlist(ch_id):
     print(response)
 
 
+# 저작권 조심
 def insert_playlist():
     insert_response = youtube.playlists().insert(
         part="snippet, status",
