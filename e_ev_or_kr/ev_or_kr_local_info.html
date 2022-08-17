@@ -1,0 +1,5176 @@
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name=“robots” content=“index,follow” />
+
+
+
+<title>지급현황(전기차) : 무공해차 통합누리집</title>
+<link rel="stylesheet" type="text/css" href="/portal/_css/reset.css?_=1" />
+<link rel="stylesheet" type="text/css" href="/portal/_css/common.css?_=2" />
+<link rel="stylesheet" type="text/css" href="/portal/_css/sub.css?_=2" />
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/js/portal/ui.js"></script>
+<script type="text/javascript" src="/js/validate.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/cmnReady.js"></script>
+<link rel="stylesheet" href="/js/cal/themes/base/jquery.ui.all.css"/>
+<script src="/js/cal/ui/jquery.ui.core.js"></script>
+<script src="/js/cal/ui/jquery.ui.widget.js"></script>
+<script src="/js/cal/ui/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="/js/printThis.js"></script>
+<script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
+<script>
+var msg = "";
+if( msg != null && msg != "" ) {
+	alert(msg);
+}
+
+function MenuMove(url, id) {
+	if(id!=""&&id!=null) {
+		document.hiddenForm.action = url;
+		document.hiddenForm.submit();
+	} else {
+		alert("에러");
+	}
+}
+</script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<div id="skip">
+	<ul>
+		<li><a href="#sub_cont">본문 바로가기</a></li>
+		<li><a href="#gnb">주메뉴 바로가기</a></li>
+		<li><a href="#lnb">서브메뉴 바로가기</a></li>
+		<li><a href="#footer_cont">하단영역 바로가기</a></li>
+	</ul>
+</div>
+
+<form id="hiddenForm" name="hiddenForm">
+	<input type="hidden" id="pageIndex" name="pageIndex" value="1"/>
+</form>
+
+
+
+<div id="wrap">
+
+
+
+
+
+
+
+
+
+
+<!--헤더-->
+<div id="head">
+
+<div class="cont">
+	<h1><a href="/portal"><img src="/portal/_images/common/logo3.png" alt="무공해차 통합누리집 로고"/></a></h1> 
+	<div id="top_menu">
+		<ul>
+			<li> </li>
+			
+			
+				<li><a href="/portal/login">로그인 </a>&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="/portal/memberJoin">회원가입</a>&nbsp;&nbsp;</li>
+			
+			
+			
+			<li>
+				<a href="/portal/siteMap">사이트맵</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="gnb">
+		<ul>
+		
+		
+		
+			
+			
+			
+			<li>
+			<a href="/portal/evcar" title="전기차 소개">전기차 소개</a>
+			<div style="display: none" class='gnb_over pl10' >
+				<dl>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/evcar"  title="">전기차 개요</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/ecoeffect"  title="">전기차 보급목적</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/chargerkind"  title="">전기차 충전정보</a>
+				</dt>
+			
+			
+			
+		
+			
+				</dl>
+			</div>
+			</li>
+			
+			
+			
+			<li>
+			<a href="/portal/buyersGuide/incenTive" title="구매 및 지원">구매 및 지원</a>
+			<div style="display: none" class='gnb_over pl20' >
+				<dl>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/buyersGuide/incenTive"  title="">무공해차 구매보조금 지원</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/ps/main/"  title="">무공해차 구매보조금 신청</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/carInfoView"  title="">구매보조금 지급대상 차종</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/localInfo"  title="">구매보조금 지급현황 확인</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/scharger_2022"  title="">완속충전기 설치신청</a>
+				</dt>
+			
+			
+			
+		
+			
+				</dl>
+			</div>
+			</li>
+			
+			
+			
+			<li>
+			<a href="/portal/board/guide/" title="정보마당">정보마당</a>
+			<div style="display: none" class='gnb_over pl30' >
+				<dl>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/board/guide/"  title="">법령/지침/가이드라인</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/board/bbs/"  title="">보도자료</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/dictionary/dictionAryList"  title="">용어사전</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/board/refer/"  title="">자료실</a>
+				</dt>
+			
+			
+			
+		
+			
+				</dl>
+			</div>
+			</li>
+			
+			
+			
+			<li>
+			<a href="/portal/board/notice/" title="참여마당">참여마당</a>
+			<div style="display: none" class='gnb_over pl40' >
+				<dl>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/board/notice/"  title="">공지사항</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/board/qna/"  title="">질의응답(건의사항)</a>
+				</dt>
+			
+			
+			
+		
+			
+			
+			
+				<dt>
+				<a href="/portal/board/faq/"  title="">FAQ</a>
+				</dt>
+			
+				</dl>
+			</div>
+			</li>
+			
+			
+			
+		
+		</ul>
+	</div>
+</div>
+<span class="gnb_over_bg"></span>
+</div> 
+	<div id="visual">
+		<div class="visual_dot"></div>
+	</div>
+	<div id="contents">
+<div id="lnb">
+<div class="lnb_tit"><h2>구매 및 지원</h2></div>
+
+<ul>
+	<li>
+
+
+	
+	
+
+	
+	
+	
+
+	
+	
+		
+		
+	<li><a href="/portal/buyersGuide/incenTive" title="무공해차 구매보조금 지원" >무공해차 구매보조금 지원</a>
+	
+
+	
+	
+	
+
+	
+	
+		
+		
+	<li><a href="/ps/main/" title="무공해차 구매보조금 신청" >무공해차 구매보조금 신청</a>
+	
+
+	
+	
+	
+
+	
+	
+		
+		
+	<li><a href="/portal/carInfoView" title="구매보조금 지급대상 차종" >구매보조금 지급대상 차종</a>
+	
+
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/carInfoView"  title="전기차">- 전기차</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/carInfoView_h2"  title="수소차">- 수소차</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+		</li>
+	
+	
+		
+		
+	<li><a href="/portal/localInfo" title="구매보조금 지급현황 확인" >구매보조금 지급현황 확인</a>
+	
+
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+			
+		
+		
+		<dl><dd  class='on'><a href="/portal/localInfo"  title="지급현황(전기차)">- 지급현황(전기차)</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/localInfo_motor"  title="지급현황(이륜차)">- 지급현황(이륜차)</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/localInfo_h2"  title="지급현황(수소차)">- 지급현황(수소차)</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/localInfo_ctcq"  title="지급현황(굴착기)">- 지급현황(굴착기)</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+		</li>
+	
+	
+		
+		
+	<li><a href="/portal/scharger_2022" title="완속충전기 설치신청" >완속충전기 설치신청</a>
+	
+
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/scharger_2022"  title="완속충전기">- 완속충전기</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/schargerK_2022"  title="키오스크">- 키오스크</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/schargerC_2022"  title="과금형콘센트">- 과금형콘센트</a></dd></dl>
+		</div>
+	
+	
+	
+
+	
+	
+
+	
+		<div class="depth2">
+		
+		
+			
+		
+		<dl><dd ><a href="/portal/schargerD_2022"  title="전력분배형충전기">- 전력분배형충전기</a></dd></dl>
+		</div>
+	
+	
+	
+
+	</li>
+</ul>
+
+</div><!-- lnb -->
+
+<div id="sub_cont">
+	<div class="title_cont">
+		<div class="location">
+			구매 및 지원 <span class="Arrow"><img src="/web/_images/Hp/Sub/icon_arrow.gif" alt="다음" /></span> 구매보조금 지급현황 확인 <span class="Arrow"><img src="/web/_images/Hp/Sub/icon_arrow.gif" alt="다음" /></span> 지급현황(전기차)
+		</div>
+		<h2>지급현황(전기차) </h2>
+	</div>
+		
+	<hr style="border:dimgray 1px dashed">
+		
+	<div>&nbsp;</div>
+	
+
+
+
+
+
+
+
+
+
+<style>
+.quick-menu { display: block; position: fixed; right: 20px; top: calc(100vh - 260px); z-index: 200; border-radius:8px; }
+ 
+.table_02_2_1{ width:100%;}
+.table_02_2_1 thead th{ text-align:center; font-size:12px; padding:10px 0; border-bottom:1px solid #d5d5d5; border-top:2px solid #555; background:#fafafa;}
+.table_02_2_1 thead th{border-right:1px solid #e5e5e5;}
+.table_02_2_1 thead th:last-child{border-right:none;}
+.table_02_2_1 tbody th{ text-align:center; font-size:11px; padding:10px 0; border-bottom:1px solid #e5e5e5; border-right:1px solid #e5e5e5;background:#fafafa;}
+.table_02_2_1 tbody td{ text-align:center; font-size:11px;height:20px; border-bottom:1px solid #e5e5e5; border-right:1px solid #e5e5e5; padding:5px 5px;  color:#666;}
+.table_02_2_1 tbody td:last-child{ border-right:none;}
+.table_02_2_1 tbody th:first-child{border-right:1px solid #e5e5e5;}
+
+div.btn { text-align: right; margin-top: 10px !important; margin-bottom: 10px !important; width:98%; margin: 0px 12px; }
+ 
+a.btn01 {text-align: right; font-weight:bold; color:#fff; background-color:#3D4C8F; padding: 6px 12px; margin:0 3px; border:1px solid #5bc0de; overflow:hidden; border-radius:3px; font-size: 13px; }
+a.btn01:hover {color:#ff0; background-color:#150090; border:1px solid #2493b3; }
+a.btn01:focus {color:#ff0; background-color:#150090; border:1px solid #2493b3; }
+
+a.btn02 {float:left; font-weight:bold; color:#fff; background-color:#3D4C8F; padding: 3px 12px; margin:0 3px; border:1px solid #5bc0de; overflow:hidden; border-radius:3px; font-size: 13px; }
+a.btn02:hover {color:#ff0; background-color:#150090; border:1px solid #2493b3; }
+a.btn02:focus {color:#ff0; background-color:#150090; border:1px solid #2493b3; }
+
+
+.layer_fix{
+	position:absolute;
+	width: 140px;
+	left: 50%;
+	margin-left: -224px;;
+	height: 30px;
+	top:50%;
+	overflow:auto;
+	border:1px solid #000;
+	background-color:#eee;
+	box-sizing:border-box;
+}
+
+.font_s { color: #e67e22; }
+.font_t { color: #0000ff; }
+.font_b { font-weight:bold; }
+</style>
+
+<script>
+$(function() {
+	/*
+	$('#year1').change(function() {
+		if(this.value < '2020') {
+			$('.btnLocalPhone').hide();
+		}else {
+			$('.btnLocalPhone').show();
+		}
+		
+		goSearch();
+	});
+	*/
+	
+	if($('#year1').val() < '2020') {
+		$('.btnLocalPhone').hide();
+	}else {
+		$('.btnLocalPhone').show();
+	}
+	
+	setInit();
+	
+});
+
+function setInit() {
+	if('2022' <= '2020') {
+		$(".tab_area").hide();
+		$(".lbl_ctcq").hide();
+	}else {
+		$(".tab_area").show();
+		var ctype="11";
+		$(".lbl_ctcq").hide();
+		
+		if(ctype=="11") {
+			$("#car").attr('class','on');
+			$("#truck").attr('class','');
+			$("#bus").attr('class','');
+		}else if(ctype=="12") {
+			$("#car").attr('class','');
+			$("#truck").attr('class','on');
+			$("#bus").attr('class','');
+		}else if(ctype=="13") {
+			$("#car").attr('class','');
+			$("#truck").attr('class','');
+			$("#bus").attr('class','on');
+		}else if(ctype=="21") {
+			$(".tab_area").hide();
+			$(".lbl_ctcq").show();
+			$("#car").attr('class','');
+			$("#truck").attr('class','');
+			$("#bus").attr('class','');
+			$("#btn_car_price").hide();
+		}
+	}
+}
+
+function goSearch() {
+
+	$("#editForm").submit();
+}
+
+function setComma(num) {
+	try {
+		return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+	} catch (e) {
+		return num;
+	}
+}
+
+function goTop() { $(document).scrollTop(0); }
+
+function goBottom() { $(document).scrollTop($(document).height()); }
+
+function goDownload(year, local_cd, fyn, fyn1, fyn2, fyn3, obj) {
+	$('#div_download').hide();
+	var frm = document.frm1;
+	frm.year.value = year;
+	frm.local_cd.value = local_cd;
+	
+	if(fyn == 'Y' && fyn1 != 'Y' && fyn2 != 'Y' && fyn3 != 'Y') {
+		frm.attach_gubun.value = 'A';
+		frm.action = '/ps/comm/noticeFile/download';
+		frm.method = "post";
+		frm.target = "";
+		frm.submit();
+	}else if(fyn != 'Y' && fyn1 == 'Y' && fyn2 != 'Y' && fyn3 != 'Y') {
+		frm.attach_gubun.value = 'B';
+		frm.action = '/ps/comm/noticeFile/download';
+		frm.method = "post";
+		frm.target = "";
+		frm.submit();
+	}else if(fyn != 'Y' && fyn1 != 'Y' && fyn2 == 'Y' && fyn3 != 'Y') {
+		frm.attach_gubun.value = 'C';
+		frm.action = '/ps/comm/noticeFile/download';
+		frm.method = "post";
+		frm.target = "";
+		frm.submit();
+	}else if(fyn != 'Y' && fyn1 != 'Y' && fyn2 != 'Y' && fyn3 == 'Y') {
+		frm.attach_gubun.value = 'D';
+		frm.action = '/ps/comm/noticeFile/download';
+		frm.method = "post";
+		frm.target = "";
+		frm.submit();
+	}else {
+		$('.layer_fix').css('top', (($(obj).position().top)));
+		$('.layer_fix').css('left', (($(obj).position().left) + 255));
+		
+		$('#div_download').show();
+		
+		if(fyn == 'Y' && fyn1 == 'Y' && fyn2 == 'Y' && fyn3 == 'Y') {
+			$('.layer_fix').css('width', '240px');
+		}else if((fyn != 'Y' && fyn1 == 'Y' && fyn2 == 'Y' && fyn3 == 'Y') || (fyn == 'Y' && fyn1 != 'Y' && fyn2 == 'Y' && fyn3 == 'Y') || (fyn == 'Y' && fyn1 == 'Y' && fyn2 != 'Y' && fyn3 == 'Y') || (fyn == 'Y' && fyn1 == 'Y' && fyn2 == 'Y' && fyn3 != 'Y')) {
+			$('.layer_fix').css('width', '190px');
+		}else {
+			$('.layer_fix').css('width', '140px');
+		}
+		
+		if(fyn == 'Y') {
+			$('.td_download').show();
+		}else {
+			$('.td_download').hide();
+		}
+		
+		if(fyn1 == 'Y') {
+			$('.td_download1').show();
+		}else {
+			$('.td_download1').hide();
+		}
+		
+		if(fyn2 == 'Y') {
+			$('.td_download2').show();
+		}else {
+			$('.td_download2').hide();
+		}
+		
+		if(fyn3 == 'Y') {
+			$('.td_download3').show();
+		}else {
+			$('.td_download3').hide();
+		}
+	}
+}
+
+function goDownloadSelect(data) {
+	
+	$('#div_download').hide();
+	
+	var frm = document.frm1;
+	frm.attach_gubun.value = data;
+	frm.action = '/ps/comm/noticeFile/download';
+	frm.method = "post";
+	frm.target = "";
+	frm.submit();
+	
+}
+
+function goExcel(){
+
+	var frm = document.editForm;
+	frm.action = '/ps/pass/localinfoExcel/';
+	frm.target = '';
+	frm.method = "post";
+	frm.submit();
+}
+
+function goSearch() {
+
+	var frm = document.editForm;
+	frm.action="/portal/localInfo"
+	frm.method = "post";
+	frm.target = '';
+	frm.submit();
+}
+
+function goSearch1(car_type) {
+	$("#car_type").val(car_type);
+	goSearch();
+}
+
+function popupLocalPhone(){
+	var frm = document.editForm;
+	
+	var popOption = "toolbar=0, location=no, directories=0, scrollbars=yes,status=no, menubar=0, resizable=yes, height=800x, width=1100, left=0, top=0";
+	window.open("","popupLocalPhone",popOption);
+	frm.action = '/ps/pass/psLocalPhone';
+	frm.method = "post";
+	frm.target = 'popupLocalPhone';
+	frm.submit();
+}
+
+function popupLocalCarPirce(){
+	var frm = document.editForm;
+	
+	var popOption = "toolbar=0, location=no, directories=0, scrollbars=yes,status=no, menubar=0, resizable=yes, height=800x, width=650, left=0, top=0";
+	window.open("","PopupLocalCarPirce",popOption);
+	frm.action = '/ps/pass/psPopupLocalCarPirce';
+	frm.method = "post";
+	frm.target = 'PopupLocalCarPirce';
+	frm.submit();
+}
+
+</script>
+
+<!--컨텐츠 영역-->
+
+<form name="frm1" method="post" action="/ps/comm/noticeFile/download">
+	<input type="hidden" id="year" name="year" value="">
+	<input type="hidden" id="local_cd" name="local_cd" value="">
+	<input type="hidden" name="model_gubun" value="car"/>
+	<input type="hidden" name="attach_gubun" value=""/>
+	<input type="hidden" name="car_type" value="11"/>
+</form>	
+
+<form name="editForm" id="editForm">
+<input type="hidden" id="car_type" name="car_type" value="11"/>
+<h3>2022년
+</h3>
+
+	<div class="tab_area" style="z-index:2; display:none;">
+		<ul>
+			<li id="car" class="on" style="width:33%"><a href="" onclick="goSearch1('11');return false;" title="전기승용으로 이동">전기승용</a></li>
+			<li id="truck" style="width:33%"><a href="" onclick="goSearch1('12');return false;" title="전기화물로 이동">전기화물</a></li>
+			<li id="bus" style="width:33%"><a href="" onclick="goSearch1('13');return false;" title="전기승합으로 이동">전기승합</a></li>
+		</ul>
+	</div>
+
+<div class="btn">
+
+<a href="" class="btnLocalPhone btn02" onclick="popupLocalPhone();return false;" title="지자체연락처 새창열림">지자체 연락처</a>
+<a href="" id="btn_car_price" class="btnLocalPhone btn02" onclick="popupLocalCarPirce();return false;" title="지자체 차종별 보조금새창열림">지자체 차종별 보조금</a>
+
+<select class="selectSrch" style="width:80px" name="year1" id="year1" title="지급연도선택">
+	
+	
+		
+		<option value="2019" >2019</option>  
+	
+		
+		<option value="2020" >2020</option>  
+	
+		
+		<option value="2021" >2021</option>  
+	
+		
+		<option value="2022"  selected="selected">2022</option>  
+	
+</select>
+
+	<a href="" class="btn01" onclick="goSearch();return false;">조회</a>
+	<a href="" class="btn01" onclick="goExcel();return false;">엑셀다운로드</a>
+	<br/>
+</div>
+
+</form>
+
+
+	<table class="table_02_2_1" summary="선택 연도에 따른 지자체별 무공해차 구매보조금 지급현황정보입니다.">
+	<caption>지자체별 무공해차 구매보조금 지급현황</caption>
+		<colgroup>
+			<col width="35px" />
+			<col width="70px" />
+			<col width="30px" />
+			<col width="40px" />
+			<col width="100px" />
+			<col width="80px" />
+			<col width="80px" />
+			<col width="80px" />
+			<col width="80px" />
+			<col />
+		</colgroup>
+		<thead>
+			<tr>
+				<th rowspan="2">시도</th>
+				<th rowspan="2">지역구분</th>
+				<th rowspan="2">차종<br>구분</th>
+				<th rowspan="2">공고<br>파일</th>
+				<th rowspan="2">접수방법</th>
+				<th>민간공고<br>대수</th>
+				<th>접수대수</th>
+				<th>출고대수</th>
+				<th>출고잔여<br>대수</th>
+				<th rowspan="2">비고</th>
+			</tr>
+			<tr>
+				<th style="border-top:1px solid #e5e5e5;">전체<br>(우선순위)<br>(법인·기관)<br>(택시)<br>(우선비대상)</th>
+				<th style="border-top:1px solid #e5e5e5;"><br>(우선순위)<br>(법인·기관)<br>(택시)<br>(우선비대상)</th>
+				<th style="border-top:1px solid #e5e5e5;">전체<br>(우선순위)<br>(법인·기관)<br>(택시)<br>(우선비대상)</th>
+				<th style="border-top:1px solid #e5e5e5; border-right:1px solid #e5e5e5;">전체<br>(우선순위)<br>(법인·기관)<br>(택시)<br>(우선비대상)</th>
+			</tr>
+		</thead>
+		<tbody>
+		
+		
+			<tr>
+				
+					<th rowspan="1">서울</th>
+				
+				
+					<th rowspan="1">서울특별시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','1100','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>14800<br> (1650)<br> (2500)<br> (1500)<br> (9150)</td>
+				<td><br> (339)<br> (2493)<br> (3519)<br> (4832)</td>
+				<td>6408<br> (211)<br> (1701)<br> (1377)<br> (3119)</td>
+				<td style="border-right:1px solid #e5e5e5;">8392<br> (1439)<br> (799)<br> (123)<br> (6031)</td>
+				
+					<td rowspan="1">★잔여대수는 매일 본사로 안내 중이오니 본사로 문의 바랍니다.<br>★제작수입사 본사에서 10일 이내 차량출고 가능하다고 제출한 명단에 한하여 서울시에서 자격부여합니다.<br>※※※ 본사를 통해 10일 이내 출고가능 명단을 통보하지 않는 차량은 자격부여 하지 않을 예정임 ※※※<br>★제작수입사 지점, 대리점(카마스터, 직원 포함)의 전기차 업무처리 (단순문의 포함) 등 관련 모든 문의는 해당 제조수입사 본사에 문의 바랍니다.<br>★대상자선정 마감은 지원가능여부확인요청순에 따라 처리할 예정입니다.<br><br>&lt;2022년도 하반기 전기자동차 민간 보급사업 추가 공고&gt;<br>ㅇ 보급대수: 총 15,520대(승용차 13,300, 화물차 2,200, 승합 20)<br>ㅇ 신청일시<br>   - 전기화물: ’22. 02. 22.(화). 10:00 ～ 12.16.(금)<br>   - 전기승용 및 전기승합: ’22. 03. 02.(수). 10:00 ～ 12.16.(금)<br>※ 12. 16.(금)까지 출고·등록순에 따라 자격 부여 및 대상자로 선정된 자에 한해  보조금지원 대상자로 선정(※ 12.16일 이전 예산 소진 시 조기 마감)<br>※ 12. 16.(금) 이전 자격부여를 받았음에도 대상자로 선정되지 않은 경우 자격부여 취소<br>※ 12. 16.(금)까지 예산 미소진 시, 10. 4일 접수분부터 접수순에 따라 예산 한도내 자격부여</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">부산</th>
+				
+				
+					<th rowspan="1">부산광역시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','2600','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>4850<br> (485)<br> (1525)<br> (700)<br> (2140)</td>
+				<td><br> (82)<br> (2447)<br> (791)<br> (1865)</td>
+				<td>4047<br> (50)<br> (1967)<br> (617)<br> (1413)</td>
+				<td style="border-right:1px solid #e5e5e5;">803<br> (435)<br> (0)<br> (83)<br> (727)</td>
+				
+					<td rowspan="1">2022년도 전기자동차 보급사업 공고<br>ㅇ 보급대수: 5,924대(승용차 4,850대, 화물차 998대, 승합 76대)<br>- 승용차: 일반(1,340),법인·기관(1,455),택시(700),우선순위(485대), K-EV100부산(800), 부산청춘드림카((70)<br> * 승용차(법인,기관) 보조금이 마감되었습니다<br>- 화물차: 일반(598),법인·기관(200),우선순위(100), 중소기업생산물량(100)<br> * 화물차(법인) 보조금이 마감되었습니다<br>- 승   합: 56대(시내버스 우선), 어린이통합버스(20) <br>ㅇ 접수기간: ’22. 2. 15. 13:00 ～ 12. 9. 18:00<br>                    ’22. 3.   8. 09:00 ～ 12. 9. 18:00 (승합 중형) <br>ㅇ 신청자격<br>- (개인) 신청서 접수일 기준 90일전부터 연속하여 부산광역시에 주소를 두어야 함<br>- (개인사업자) 1대 구매시 개인으로 간주, 2대 이상의 차량 구매시 대표자 및 사업장 주소 모두 부산시인 경우 가능<br>- (법인) 부산시에 주소를 둔 사업자 (본사, 지사, 공장, 자동차 대여사업소 등)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">대구</th>
+				
+				
+					<th rowspan="1">대구광역시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','2700','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>4471<br> (447)<br> (1341)<br> (894)<br> (1789)</td>
+				<td><br> (85)<br> (1642)<br> (763)<br> (1927)</td>
+				<td>3686<br> (67)<br> (1494)<br> (561)<br> (1564)</td>
+				<td style="border-right:1px solid #e5e5e5;">785<br> (380)<br> (0)<br> (333)<br> (225)</td>
+				
+					<td rowspan="1">★7/1 2차보급 시작<br><br>ㅇ 총 보급수량 : 6,114대 [승용차 4,471, 화물차 1,582, 버스 16]   <br> * 전체 보급 : 6,053대 [승용차 4,471(일반 1,789 , 법인·기관 1,341, 택시(개인 447, 법인 447), 우선순위 447), 화물차 1,582(일반 950, 법인·기관 318, 중소기업생산 157, 우선순위 157), 버스 16]<br>ㅇ 보급기간 : 공고일 당일 ∼ 2022. 12. 23.(금)<br>ㅇ 신청 수량 제한<br>- 개 인 : 1대 <br>- 개인사업자 : 10대(2대 이상 차량 구입 시 대표자 및 사업장 주소지가 모두 대구시로 제한)<br>- 법 인 : 100대 (100대 초과 신청 시 대구시에 구매 사유 등 사업계획서 제출)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">인천</th>
+				
+				
+					<th rowspan="1">인천광역시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','2800','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>9839<br> (985)<br> (2955)<br> (985)<br> (4914)</td>
+				<td><br> (72)<br> (3818)<br> (1138)<br> (2489)</td>
+				<td>5477<br> (51)<br> (3070)<br> (656)<br> (1700)</td>
+				<td style="border-right:1px solid #e5e5e5;">4362<br> (934)<br> (0)<br> (329)<br> (3214)</td>
+				
+					<td rowspan="1">★2022년 전기자동차 민간보급사업 변경공고 안내★<br><br>○ 신청기간 : 2022. 7. 7. 09:00 ~ 2022.11. 30. 18:00(예산 소진 시 종료)<br>   - 상반기(1차) 잔여물량 + 하반기(2차) 물량을 포함한 총 보급대수로 변경 공고<br>○ 보급대수: 9,849대 (일반 4,924대, 법인,기관 2,955대, 택시 985대, 우선순위 985대)<br>○ 신청자격<br>   - (개인) 신청서 접수일 기준 30일전부터 연속하여 인천광역시에 주소를 둔 만 18세 이상 인천시민<br>   - (법인) 신청서 접수일 전일 현재 인천광역시내 사업장(본사, 지사,  공장, 자동차 대여사업소 등)이 위치한 법인, 단체,기관     <br>○ 보급대수제한: 개인(1대), 개인사업자(5대), 법인(100대)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">광주</th>
+				
+				
+					<th rowspan="1">광주광역시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','2900','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>2212<br> (222)<br> (664)<br> (222)<br> (1104)</td>
+				<td><br> (32)<br> (310)<br> (244)<br> (995)</td>
+				<td>1429<br> (26)<br> (300)<br> (217)<br> (886)</td>
+				<td style="border-right:1px solid #e5e5e5;">783<br> (196)<br> (364)<br> (5)<br> (218)</td>
+				
+					<td rowspan="1">★ 2022년 7월 이후 &apos;법인물량&apos;과 &apos;택시물량&apos;은 &apos;일반물량과&apos; 통합하여 보급 추진 됨<br><br>○ 신청기간 :  무공해차구매신청지원시스템 정산운영 시부터 ∼ ’22.12.9.(금)18:00<br>   - 상반기 :  무공해차구매신청지원시스템  정상운영시부터 ∼ ’22.6.30.(목)18:00<br>   - 하반기 :  ’22.7.1.(금)~12.9.(금)18:00</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">대전</th>
+				
+				
+					<th rowspan="1">대전광역시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','3000','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>5288<br> (530)<br> (1587)<br> (530)<br> (2641)</td>
+				<td><br> (41)<br> (1797)<br> (558)<br> (1650)</td>
+				<td>3164<br> (31)<br> (1478)<br> (408)<br> (1247)</td>
+				<td style="border-right:1px solid #e5e5e5;">2124<br> (499)<br> (109)<br> (122)<br> (1394)</td>
+				
+					<td rowspan="1">* 2022. 7. 1.일부터 &quot;우선순위물량&quot;을 제외한, &quot;택시물량&quot;, &quot;법인물량&quot;은 추가 공고 없이 일반물량과 통합하여 지원<br><br>○ 접수기간 : 2022. 2. 17. 09:00 ~ 2022. 12. 9. 18:00<br>    - 상반기 : 2022. 2. 17. 09:00 ~ 2022. 6. 30. 18:00<br>    - 하반기 : 2022. 7. 1. 09:00 ~ 2022. 12. 9. 18:00<br> * 예산 또는 물량 소진 시까지 / 상반기 잔여분 발생시 하반기 보급물량에 합산<br>○ 보급대수 : 승용 5,288대(상반기 3,702, 하반기 1,586) * 보급여건 및 예산증감에 따라 변동가능<br>  - 우선순위 10%, 택시 10%, 법인기관 30%, 일반 50%<br>○ 신청 대수 제한<br>  - 개인 : 1대<br>  - 개인사업자 : 50대(2대 이상 차량 구매시 대표자 및 사업장 주소 모두 대전시로 제한)<br>  - 법인: 20대 (리스 및 장기 렌트일 경우 소재지 또는 실사용자의 주소지 대전시면 지원)<br><br>* 지원신청 접수 처리는 약 1~2일소요되며, 빠른 승인을 위해 신청서 승인요청 전화문의는 자제 부탁드립니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">울산</th>
+				
+				
+					<th rowspan="1">울산광역시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','3100','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>841<br> (75)<br> (160)<br> (133)<br> (473)</td>
+				<td><br> (78)<br> (175)<br> (145)<br> (521)</td>
+				<td>846<br> (73)<br> (163)<br> (137)<br> (473)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (2)<br> (0)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">============ 7월공고물량 승용 모두 마감되었습니다.=============<br>&lt;2022년 하반기 민간보급사업 공고&gt;<br>○ 시스템상 공고구분: &quot;추경1차&quot; 로 선택하여 접수하여야 함. <br>○ 접수기간: 7. 13.(수) ~ <br>○ 승용 보급대수 : 222대 (개인 120, 법인 40, 택시 40, 우선순위 22) <br>   ※ 반드시 10일이내 출고 확정된 건에 대해서만 신청하여야 함<br>      (신청서 접수 시 출고 증빙서류 첨부한 건에 대하여 바로 대상자선정, 미첨부시 자격부여 처리)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">세종</th>
+				
+				
+					<th rowspan="1">세종특별자치시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','3611','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>670<br> (67)<br> (201)<br> (67)<br> (335)</td>
+				<td><br> (52)<br> (61)<br> (30)<br> (476)</td>
+				<td>411<br> (40)<br> (53)<br> (13)<br> (305)</td>
+				<td style="border-right:1px solid #e5e5e5;">259<br> (27)<br> (148)<br> (54)<br> (30)</td>
+				
+					<td rowspan="1">2월23일 09시부터 상반기 신청·접수 개시<br>3월4일 변경공고 등록<br>3월16일 2차 변경공고 등록<br>5월31일 상반기 일반(개인·개인사업자) 보급분 대상자 선정 마감<br>7월1일 09시부터 하반기 지원사업 시행</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">수원시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4111','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1870<br> (187)<br> (0)<br> (218)<br> (1465)</td>
+				<td><br> (59)<br> (253)<br> (231)<br> (924)</td>
+				<td>1153<br> (46)<br> (189)<br> (187)<br> (731)</td>
+				<td style="border-right:1px solid #e5e5e5;">717<br> (141)<br> (0)<br> (31)<br> (734)</td>
+				
+					<td rowspan="1">&lt;2022년 전기자동차 민간보급사업(하반기)&gt; <br><br>○ 보급대수 : 920대(일반 736대, 택시 92대, 우선순위 92대)<br>    * 보급대수는 여건 및 예산범위 내에서 변동될 수 있음<br>    ** 택시(승용) 잔여물량은 9월 1일부터, 우선순위 잔여물량은 10월 1일부터 일반물량으로 통합(물량 소진 시 일반물량과 통합하여 보급 추진) <br>○ 보급기간 : 2022. 7. 13.(수) 09:00 ~ 12. 9.(금) 18:00<br>    * 보급기간 내 예산소진 시 조기 마감될 수 있음<br>○ 신청대상 : 신청일로부터 2개월 이상 시에 연속하여 거주한 시민 또는 사업자<br>○ 선정기준 : 자동차 출고·등록 순<br>○ 보급차량 : 무공해차 통합누리집(ev.or.kr)에 게재 차량<br>○ 기    타 : 자세한 사항은 공고문 참조<br><br>※ 보조금 지원신청서의 서식이 상반기와 달라 새로운 서식으로 신청하여 주시길 바랍니다.(상반기 서식으로 신청할 경우 자격부여X)<br>※※ 민원전화 폭주로 인해 업무처리가 지연되오니, 빠른 처리를 위해 가능한 전화문의는 자제부탁드립니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">성남시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4113','Y','Y' ,'Y','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>3320<br> (332)<br> (996)<br> (332)<br> (1660)</td>
+				<td><br> (71)<br> (822)<br> (303)<br> (922)</td>
+				<td>1610<br> (60)<br> (658)<br> (164)<br> (728)</td>
+				<td style="border-right:1px solid #e5e5e5;">1710<br> (272)<br> (338)<br> (168)<br> (932)</td>
+				
+					<td rowspan="1">★★★ 지급신청후 원본서류 미제출(전산등록만 해주시면 됩니다)★★★<br><br>&lt;상반기와 동의서 서식이 변경되었으니, 변경된 서식으로 등록하여주시기 바랍니다&gt;<br><br>전기승용<br> - 개인: 1대, 법인: 수량제한 없음(일반 승용 동일)<br> - 접수 3개월 초과차량: 배정화면 첨부시 첨부파일에1개월 내 주민등록초본 또는 법인등기부등본 첨부<br> - 접수마감: 예산소진시 종료(보급대수 1.2배 제한 해제)<br><br>※ 리스, 렌트의 경우도 자동차등록증상 사용본거지 &apos;성남시&apos;로 기재하여야 함.<br><br>※ 서류제출시 사업자번호, 신청자 생년월일 등 확인부탁트립니다.<br>    (현대자동차:  울산공장&amp;본사 사업자번호 모두 인정. 본사 통화 완료 2022. 6. 14.)<br>※2022. 6. 22.기준 당일접수 서류에 대해 당일 처리하고 있으니, 접수확인 전화 자제부탁드립니다.<br><br>문의: 성남시 기후에너지과(031-729-3162, 3163)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">의정부시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4115','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>920<br> (92)<br> (276)<br> (92)<br> (460)</td>
+				<td><br> (22)<br> (195)<br> (120)<br> (298)</td>
+				<td>456<br> (17)<br> (188)<br> (66)<br> (185)</td>
+				<td style="border-right:1px solid #e5e5e5;">464<br> (75)<br> (88)<br> (26)<br> (275)</td>
+				
+					<td rowspan="1">하반기  승용  220대<br><br>하반기 승용 2022. 7. 4.(월) 09:00 ~ 12.30.(금)18:00 예산소진시 조기종료<br>자세한 내용 공고(2차) 참고<br>(화물은 7월 6일 수요일 접수입니다)<br><br>---------------------------------------------------------<br>의정부시 전기자동차 보급사업 안내 <br>상반기 하반기 나눠서 진행(하반기는 7월 이후 공고 예정)<br><br>ㅇ (상반기)사업기간 : 2022. 2. 25.(금) 09:00 ~ 6. 30. (목) 18:00 <br><br>ㅇ (상반기)지원대수 : 전기승용 700대 (차종별보조금차이로 지원대수는 달라질수있음)<br>-  일반 350대, 우선순위 70대, 법인 및 기관 210대, 택시 70대 <br><br>ㅇ 선정방법 : 출고등록순<br>  ▶각 지원대수당 1.2배이상 지원신청 접수시 신청마감!!!!◀<br>  ▶ 지원신청서 접수순으로 서류검토후 자격부여해드리며, 지원가능확인요청순으로 대상자 선정!!!!◀<br><br>  - 전화문의가 많아 업무처리가 지연될 수 있습니다. 서류심사 및 자격부여까지 3~4일 소요되므로 빠른 처리를 위해 가능한 확인전화, 전화문의 자제 부탁드립니다. (서류심사중 보완사항 있을 시 전화 및 문자발송, 자격부여시 문자발송)<br><br>※ 기타 자세한 내용은 공고문 참조하여 주시기바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">안양시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4117','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1475<br> (230)<br> (360)<br> (120)<br> (765)</td>
+				<td><br> (17)<br> (46)<br> (192)<br> (367)</td>
+				<td>412<br> (12)<br> (28)<br> (114)<br> (258)</td>
+				<td style="border-right:1px solid #e5e5e5;">1063<br> (218)<br> (332)<br> (6)<br> (507)</td>
+				
+					<td rowspan="1">▶2022년 하반기 전기자동차 민간 보급사업◀<br>○ 신청기간 : 2022. 7. 11. (월) 09:00 ~ 2022. 12. 9.(금) 18:00 <br> * 예산 소진 시 마감<br>○ 보급대수 : 승용 600대, 화물 48대<br> * (승용) 일반물량에 개인,개인사업자,법인,택시 포함<br> * (화물) 일반물량에 개인,개인사업자,법인 포함<br> * &apos;22년 전기차 보조금 차등지원 등에 따라 보급 대수는 변경될 수 있음<br>○ 신청대상 : 신청일로부터 1개월 이상 시에 연속하여 안양시에 주소를 두어야 함  <br>○ 선정기준 : 출고,등록순</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">부천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4119','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1200<br> (120)<br> (360)<br> (120)<br> (600)</td>
+				<td><br> (40)<br> (368)<br> (254)<br> (414)</td>
+				<td>834<br> (29)<br> (345)<br> (177)<br> (283)</td>
+				<td style="border-right:1px solid #e5e5e5;">366<br> (91)<br> (15)<br> (0)<br> (317)</td>
+				
+					<td rowspan="1">&lt;2022년도 전기자동차 보급사업 (2차) 변경공고&gt;<br>○ 2차 접수 기간 : 2022. 5. 13. ~ 예산소진시까지<br>○ 2차 물량: 총 400대<br>-전기승용 : 일반 200대, 우선순위 40대, 법인·기관 120대, 택시 40대<br>※ 1차 공고물량에 초과 된 예비 접수자는 2차 공고물량에 우선적으로 대상자 선정<br>※ 2022년도 전기자동차 보급사업 2차 공고분에 대하여 추경 후 예산 확보 시 보조금 지급 예정<br>※ 기타 자세한 사항은 공고문 참조<br>**지원가능 확인 요청 시 당일에 바로바로 확인 후 대상자 선정 하고있으므로 따로 전화 안주셔도 됩니다.**</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">광명시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4121','Y','Y' ,'Y','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>406<br> (41)<br> (122)<br> (45)<br> (198)</td>
+				<td><br> (11)<br> (29)<br> (77)<br> (183)</td>
+				<td>166<br> (7)<br> (13)<br> (28)<br> (118)</td>
+				<td style="border-right:1px solid #e5e5e5;">240<br> (34)<br> (109)<br> (17)<br> (80)</td>
+				
+					<td rowspan="1">&lt;2022년도 전기자동차 보급사업 공고(3차)&gt;<br>○ 3차 접수 기간 : 2022. 7. 11.(월) 9:00  ~  예산소진시까지<br>○ 전체 사업 물량: 총 406대 <br>-전기승용 : 일반 198대, 우선순위 41대, 법인·기관 122대, 택시 45대<br>※2022. 7. 11.(월)부터 법인기관, 택시 잔여물량 일반물량으로 통합. <br><br>○ 선정방법 : 7.11.(월)부터 출고·등록순으로 변경</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">평택시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4122','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>550<br> (55)<br> (122)<br> (24)<br> (349)</td>
+				<td><br> (36)<br> (68)<br> (29)<br> (530)</td>
+				<td>381<br> (28)<br> (51)<br> (13)<br> (289)</td>
+				<td style="border-right:1px solid #e5e5e5;">169<br> (27)<br> (71)<br> (11)<br> (60)</td>
+				
+					<td rowspan="1">2022년 하반기 전기자동차(승용) 민간보급사업<br>  ○ 접수기간 : 2022. 7. 12.(화) 10:00~ 예산소진시<br>  ○ 선정방법 : 출고 등록순에 따른 대상자 결정<br>  ○ 사 업 량 : 승용·초소형 약 258대<br>  ○ 지원대상 및 기타문의사항 : 자세한 사항은 첨부파일 참고</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">동두천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4125','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>228<br> (26)<br> (76)<br> (26)<br> (100)</td>
+				<td><br> (7)<br> (2)<br> (11)<br> (62)</td>
+				<td>57<br> (6)<br> (2)<br> (10)<br> (39)</td>
+				<td style="border-right:1px solid #e5e5e5;">171<br> (20)<br> (74)<br> (16)<br> (61)</td>
+				
+					<td rowspan="1">* 2022년 총보급대수 : 승용 230대, 화물 60대<br>* 신청기준 : 출고등록순<br>* 신청기간 : 2022.02.17~2022.12.09<br>* 신청자격 : 동두천 거주자(3개월), 동두천 소재 사업장 등</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">안산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4127','Y','Y' ,'Y','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1060<br> (106)<br> (424)<br> (106)<br> (424)</td>
+				<td><br> (25)<br> (274)<br> (66)<br> (322)</td>
+				<td>402<br> (18)<br> (161)<br> (24)<br> (199)</td>
+				<td style="border-right:1px solid #e5e5e5;">658<br> (88)<br> (263)<br> (82)<br> (225)</td>
+				
+					<td rowspan="1">2022년도 전기자동차 보급사업 공고(3차)<br>○ 접수기간 : 2022.7.18.(월) 09:00 ~ 예산소진시까지<br>○ 보급대수 : 475대(승용 460대, 화물 15대) → 차종별 보조금 차등 지원 <br> ▶ 승용 : 일반 184대 / 법인기관 184대 / 택시 46대 / 우선순위 46대<br> ▶ 화물 : 일반 10대 / 법인기관 5대<br>○ 지원방법 : 출고등록 접수에 의한 대상자 선정<br><br>※ 1,2차 공고[안산시 공고 제2022-351호, 제2022-1205호] 잔여 물량과 합산 집행하여 기 접수된 건도 연계하여 적용(단, 시스템상 출고기한 만료 시 취소 후 재접수 필요)<br>※ 지급신청시 보조금 청렴이행 서약서 첨부 바람(업체 대표 : 판매 대리점 명판 및 날인, 책임관리자 및 실무책임자 : 성함 기재 후 서명)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">고양시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4128','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>2643<br> (265)<br> (793)<br> (265)<br> (1320)</td>
+				<td><br> (38)<br> (810)<br> (98)<br> (780)</td>
+				<td>1334<br> (30)<br> (618)<br> (83)<br> (603)</td>
+				<td style="border-right:1px solid #e5e5e5;">1309<br> (235)<br> (175)<br> (182)<br> (717)</td>
+				
+					<td rowspan="1">고양시 전기자동차 보급사업 안내<br>ㅇ 사업기간 : 2022. 2. 21.(월) 09:00 ~ 예산 소진 시까지<br>ㅇ 지원규모 : 총 3,345대 (전기승용 2,643대, 전기화물 702대)<br>  - 전기승용 : 우선순위 265대, 택시 265대, 법인기관 793대, 일반 1,320대<br>    ※ 2022. 7. 1.부터 법인기관 잔여물량, 택시 잔여물량은 일반물량으로 통합<br>    ※ 사업 추이에 따라 추가공고 없이 예산 및 보급대수가 변동될 수 있음<br>ㅇ 보급대수 제한 : (개인·개인사업자)세대당 1대, (법인·기업·공공기관)사업장당 10대<br>ㅇ 선정방법 : 출고등록순<br>ㅇ 지원 및 지급신청 서류 우편제출처 : 10461) 경기도 고양시 덕양구 마상로126번길 91, 404호 녹색도시담당관 (주교동, 고양원당줌시티)<br>※ 기타 자세한 내용은 공고문 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">과천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4129','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>250<br> (20)<br> (12)<br> (6)<br> (212)</td>
+				<td><br> (6)<br> (12)<br> (21)<br> (124)</td>
+				<td>122<br> (5)<br> (12)<br> (6)<br> (99)</td>
+				<td style="border-right:1px solid #e5e5e5;">128<br> (15)<br> (0)<br> (0)<br> (113)</td>
+				
+					<td rowspan="1">&lt;과천시 전기자동차 보급사업(2차)&gt; <br>○ 신청기간: 2022.7.18. 15:00~<br>○ 사업량: 승용 143대 (우선17, 일반 126(법인,택시물량 통합))<br>                 화물 16대 (우선3, 중소기업생산제품1, 일반12(법인물량 통합))<br>   ※ 보급대수는 보조금 차등지원 및 보급여건에 따라 예산범위 내에서 변동 가능<br><br>○ 지원금액: 승용 최대 1,100만원(국700, 시400) / 화물 최대 2,100만원(국1,400, 시700)<br>   ※ 차종별 지원금액 상이하므로 공고문 확인<br>○ 지원대상: 구매신청서 제출일 이전 1개월(30일)까지 과천시에 주소지를 둔 시민, 법인, 기관 등<br>   ※ 환경개선부담금 체납액이 없는자에 한해 보조금 지원 가능<br>○ 선정방법: 차량 출고등록순 <br><br>  ※ 필요서류 이외 불필요한 서류 첨부X (택시 등의 경우 초본 불필요)<br>  ※ 서류 제출시 반드시 원본대조필 날인 (원본우편발송 불필요)<br><br>★ 22.6.30. 접수건부터 의무운행기간 변경 적용 (기존2년 → 5년)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">구리시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4131','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>330<br> (33)<br> (100)<br> (33)<br> (164)</td>
+				<td><br> (6)<br> (5)<br> (38)<br> (122)</td>
+				<td>110<br> (6)<br> (3)<br> (23)<br> (78)</td>
+				<td style="border-right:1px solid #e5e5e5;">220<br> (27)<br> (97)<br> (10)<br> (86)</td>
+				
+					<td rowspan="1">구리시 전기자동차 보급사업(2차) 안내 <br><br>ㅇ 사업기간 : 2022. 6. 10.(금) ~ 예산 소진 시까지<br>ㅇ 지원규모 : 전기승용 208대<br> - 전기승용 : 일반 83대, 법인 및 기관 97대, 우선순위 28대<br>ㅇ 보급대수 제한 : (개인)세대당 1대, (개인사업자·법인 등)사업자당 승용 10대<br>ㅇ 선정방법 : 출고등록순 <br><br>※ 전기화물의 경우 별도 공고없이 예산 소진 시까지 접수<br>※ 기타 자세한 내용은 공고문 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">남양주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4136','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1376<br> (99)<br> (0)<br> (0)<br> (1277)</td>
+				<td><br> (66)<br> (66)<br> (116)<br> (639)</td>
+				<td>459<br> (43)<br> (41)<br> (58)<br> (317)</td>
+				<td style="border-right:1px solid #e5e5e5;">917<br> (56)<br> (0)<br> (0)<br> (960)</td>
+				
+					<td rowspan="1">○ 신청기간 : 2022. 2. 23.(수) 10:00 ∼ 예산 소진 시 까지 <br>○ 보급물량 <br>   - 전기승용차 1,376대<br>   - 전기화물차 357대 - 상하반기 자격부여 마감 <br>  ※ 보조금 차등 지급에 따라 보급 물량은 별도 추가공고 없이 변동될 수 있음<br>○ 선정방법 : 출고등록순<br>○ 자세한 세부사항은 2022년도 남양주시 전기자동차 보급사업 공고문 확인<br>○ 전기택시 시비 보조금 추가 지원은 76대 한정(보조금 지원 신청 시 예산 잔여 여부 확인 필요)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">오산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4137','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>269<br> (27)<br> (0)<br> (0)<br> (242)</td>
+				<td><br> (18)<br> (26)<br> (6)<br> (125)</td>
+				<td>102<br> (11)<br> (19)<br> (2)<br> (70)</td>
+				<td style="border-right:1px solid #e5e5e5;">167<br> (16)<br> (0)<br> (0)<br> (172)</td>
+				
+					<td rowspan="1">&lt;2022년 전기자동차 구매지원사업 2차공고&gt; <br>○ 접수기간 : (화물) 2022. 7. 21. 10:00 ~ 2022. 12. 2. 18:00<br>                     (승용) 2022. 7.18. 10:00 ~2022.12.2. 18:00<br><br>○ 보급대수 : 승용 130대(일반 117대, 우선순위 13대)<br>                    화물 50대( 일반 40대, 우선5대, 중소기업 5대) <br> * 보급여건 및 예산 범위 내에서 변동될 수 있음 <br>○ 신청대상 : 신청일로부터 1개월 이상 시에 연속하여 거주한 시민 또는 사업자 <br>○ 선정기준 : 자동차 출고·등록 순 <br><br>* 기타 자세한 내용 공고문 참조 &amp; 출고등록후 지원신청 및 지급신청 관련서류 원본 제출 바람<br>** 지원신청서 접수순으로 서류검토후 자격부여해드리며, 지원가능확인요청순으로 대상자 선정<br>*** 지원신청서 양식 변경으로 인해 기존 양식으로 신청시 접수불가</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">시흥시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4139','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>525<br> (53)<br> (158)<br> (53)<br> (261)</td>
+				<td><br> (25)<br> (49)<br> (65)<br> (368)</td>
+				<td>341<br> (19)<br> (41)<br> (44)<br> (237)</td>
+				<td style="border-right:1px solid #e5e5e5;">184<br> (34)<br> (117)<br> (9)<br> (24)</td>
+				
+					<td rowspan="1">★ 변경내용 : 의무운행기간 2년 → 의무운행기간 5년<br>                     (2022 전기자동차 보급사업 보조금 업무처리 지침 개정에 따라 **2022.6.30. 접수 건**부터 적용)<br>                   : 2022.7.1.이후 승용(택시, 법인기관)물량 일반 통합<br><br>***보급대수보다 일정수량 초과접수시 마감처리되오니 양해하여 주시기 바랍니다.***<br><br>1. 신청기간 : 2022. 2. 21. ~ 예산 소진 시까지<br>2. 보급대수<br>- 승용: 총525대[일반(통합) 472대, 우선순위 53대]<br>3. 보급차종: 무공해차 통합누리집 참조<br>4. 지원방법: <br>(1단계)접수순으로 자격부여 <br>(2단계)출고·등록 예정일순(동일날짜일 경우  &quot;지원가능확인요청순”)으로 대상자선정<br><br>--------------------------------------------------------------------------------------------------<br><br>시흥시 공고 상, 공공기관을 위한 별도의 예산배정은 없으며, 공공기관은 법인및기관 물량으로 진행합니다. <br>구매지원시스템상 공공기관 단순 전산접수 진행목적으로 조달대수를 입력하였으며, <br>조달입력대수가 공공기관 별도배정물량을 의미하지 않음을 알려드립니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">군포시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4141','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>465<br> (50)<br> (136)<br> (50)<br> (229)</td>
+				<td><br> (10)<br> (7)<br> (52)<br> (167)</td>
+				<td>139<br> (7)<br> (6)<br> (25)<br> (101)</td>
+				<td style="border-right:1px solid #e5e5e5;">326<br> (43)<br> (130)<br> (25)<br> (128)</td>
+				
+					<td rowspan="1">ㅇ 사업기간: 2022. 2. 21.(월) ~ 예산소진 시 까지<br>ㅇ 지원규모: (승용) 일반 229대, 우선지원 50대, 택시 50대, 법인기관 141대<br>ㅇ 보급대수 제한 : (개인) 세대당 1대 <br>※ 출고 10일전, 지원가능확인요청 시스템 입력 후 유선연락 바람(031-390-0542)<br>------------------------------------------------------------------------------------------------------<br>ㅇ 사업기간: 2022. 7. 11.(월) ~ 예산소진 시 까지<br>   ※ 상반기 신청분 재접수 하지 않고, 연속하여 인정<br>ㅇ 잔여대수: (승용) 우선 44대, 일반 306대<br>ㅇ 보급대수 제한 : (개인) 세대당 1대 <br>   ※ 출고 10일전, 지원가능확인요청 시스템 입력 후 유선연락 바람(031-390-0542)<br>   ※ 지급신청 후 원본서류 보내주지 않으셔도 됩니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">의왕시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4143','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>481<br> (50)<br> (7)<br> (80)<br> (344)</td>
+				<td><br> (9)<br> (7)<br> (50)<br> (155)</td>
+				<td>153<br> (7)<br> (6)<br> (32)<br> (108)</td>
+				<td style="border-right:1px solid #e5e5e5;">328<br> (43)<br> (1)<br> (48)<br> (236)</td>
+				
+					<td rowspan="1">2022. 2. 21.(월) 10:00 접수 시작 <br>보급대수: 일반 200대, 우선순위 50대, 법인ㆍ기관 151대 , 택시 80대<br>선정기준: 구매지원신청서 접수 순<br>※ 구매지원신청서 접수 후 2개월안에 미출고(세금계산서 미제출)시 대상자 선정 취소 또는 대기자로 변경<br>※ 전기택시는 반드시 지원구분을 &apos;택시&apos;로 선택하여 접수하여야 함<br>--------------------------------------------------------------------------------------------------------------------------<br>(2차 변경공고)<br>보급대수: 일반 344대, 우선순위 50대, 법인ㆍ기관 7대 , 택시 80대<br>선정기준: 구매지원신청서 접수 순<br>※ 구매지원신청서 접수 후 3개월안에 미출고(세금계산서 미제출)시 대상자 선정 취소 또는 대기자로 변경<br>※ 전기택시는 반드시 지원구분을 &apos;택시&apos;로 선택하여 접수하여야 함</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">하남시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4145','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>644<br> (66)<br> (196)<br> (66)<br> (316)</td>
+				<td><br> (26)<br> (165)<br> (16)<br> (475)</td>
+				<td>479<br> (15)<br> (155)<br> (15)<br> (294)</td>
+				<td style="border-right:1px solid #e5e5e5;">165<br> (51)<br> (41)<br> (51)<br> (22)</td>
+				
+					<td rowspan="1">○신청기간 : 2022. 2. 17. ~ 예산 소진 시까지 <br>○보급대수 <br> - 승용 : 총 644대(우선 66대, 법인·기관 196대, 택시 66대, 일반316대)<br> - 화물 : 총 234대(우선 24대, 법인·기관 47대, 중소기업제품 24대, 일반 139대)<br>○ 보급차종 : 무공해차 통합누리집 참조 <br>○ 대상자선정 : 출고·등록순(지원가능확인요청순)<br>※ 기타 자세한 사항은 공고문 참조<br>※※ 민원전화 폭주로 업무처리가 지연되고 있으니, 빠른 처리를 위해 가능한 전화문의 자제 부탁드립니다. <br>※※※지급신청 후 원본 서류 보내주지 않으셔도 됩니다<br>(서류심사 중 보완사항 있을시 문자 발송예정/ 자격부여 시에도 문자 발송예정)<br>※※※※의무운행기간 내 말소 환수율 관련 법 개정으로 환수에 관한 동의서 변경된 서식으로 작성하여주세요※※※※</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">용인시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4146','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>2141<br> (215)<br> (462)<br> (97)<br> (1367)</td>
+				<td><br> (77)<br> (435)<br> (88)<br> (1394)</td>
+				<td>1519<br> (59)<br> (386)<br> (70)<br> (1004)</td>
+				<td style="border-right:1px solid #e5e5e5;">622<br> (156)<br> (76)<br> (27)<br> (363)</td>
+				
+					<td rowspan="1">[2022년도 전기자동차(승용,화물) 민간 보급사업 하반기 변경공고 안내]<br>* 신청기간 (변경 물량반영) : 07.13.(수) <br><br>&lt;사업물량&gt; -출고등록순<br> - 승용 2,141대 (우선215, 법인464, 택시 97, 일반1365)<br> - 화물  353대 (우선 33, 법인66, 중소기업생산물량 33, 일반 221)<br>※상반기 공고에 하반기 추가물량 합산 및 잔여 물량 조정하여 연속적으로 보급 <br><br><br>★ 신청접수건이 많아 서류심사 및 자격부여까지 3~4일 소요되므로 되도록 전화자제요청드립니다<br>(서류심사 중 보완사항 있을시 문자 발송예정/ 자격부여 시에도 문자 발송예정)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">파주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4148','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>631<br> (73)<br> (100)<br> (50)<br> (408)</td>
+				<td><br> (29)<br> (42)<br> (10)<br> (366)</td>
+				<td>274<br> (16)<br> (24)<br> (8)<br> (226)</td>
+				<td style="border-right:1px solid #e5e5e5;">357<br> (57)<br> (76)<br> (42)<br> (182)</td>
+				
+					<td rowspan="1">&lt; 2022년 파주시 전기자동차 보급사업(하반기)&gt;<br><br>○ 사업기간: 2022.7.1.(금) 10시~ 예산소진시까지<br>○ 보급대수: 승용631대 (개인,법인 558대, 우선순위 73대), 화물151대(개인,법인 115대, 우선순위 17대, 중소기업 19대)<br>※ 보급대수는 차종별 보조금 차등지원에 따라 예산범위 내에서 변동될 수 있음.<br>○ 신청대상: 신청일 이전 3개월 이상 파주시 거주자<br>○ 선정방법: 차량 출고·등록순<br>※ 수출 말소 시 의무운행기간 변경에 따라 전기차 보조금 지급 신청 유의사항 동의서 재첨부(13페이지)<br>※ 자격부여까지 3~4일 소요되므로 빠른 처리를 위해 가능한 전화문의 자제 부탁드립니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">이천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4150','Y','Y' ,'Y','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>317<br> (32)<br> (96)<br> (32)<br> (157)</td>
+				<td><br> (17)<br> (17)<br> (1)<br> (203)</td>
+				<td>161<br> (8)<br> (14)<br> (0)<br> (139)</td>
+				<td style="border-right:1px solid #e5e5e5;">156<br> (24)<br> (82)<br> (32)<br> (18)</td>
+				
+					<td rowspan="1">★ 반드시 출고기한(3개월) 내 출고가능한 차량만 신청 ★<br><br>전기자동차 보급사업(승용) 3차 접수<br>○ 사업기간: 2022. 7. 7.(목) 10:00 ~ 예산소진 시까지<br>○ 보급대수: 승용 171대<br>○ 선정기준: 출고·등록순<br><br>※ 1차, 2차 사업 잔여물량과 통합하여 진행<br>※ 기타 자세한 사항은 반드시 공고문 확인<br>※ 서류심사 및 자격부여까지 3~4일 소요되므로 빠른 처리를 위해 가능한 전화문의 자제 부탁드립니다.<br>※ 서류심사 중 보완사항 있을 시 문자 발송예정/자격부여 시에도 문자 발송 예정</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">안성시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4155','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>150<br> (15)<br> (45)<br> (15)<br> (75)</td>
+				<td><br> (9)<br> (21)<br> (4)<br> (128)</td>
+				<td>118<br> (8)<br> (15)<br> (3)<br> (92)</td>
+				<td style="border-right:1px solid #e5e5e5;">32<br> (7)<br> (30)<br> (12)<br> (0)</td>
+				
+					<td rowspan="1">2022년도 전기승용차 구매지원 사업(대기환경보전법 시행규칙 개정에 따른 변경공고)<br><br>1. 접수기간 : 2022년 2월 23일 수요일 오전9시부터 ~ 예산 소진시 까지<br>2. 지원대수 : 약 150대<br>3. 지원금액 : 전기승용 1대당 최대 1,200만원 지원<br>4. 선정방법 : 출고등록순<br><br>※ 변경사항<br>- 수출 목적 말소 시 별도의 보조금 회수요율 적용<br>- 신청 양식 일부 변경(신청 접수 시 변경된 양식으로 제출)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">김포시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4157','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1106<br> (111)<br> (332)<br> (111)<br> (552)</td>
+				<td><br> (19)<br> (347)<br> (18)<br> (548)</td>
+				<td>743<br> (15)<br> (310)<br> (16)<br> (402)</td>
+				<td style="border-right:1px solid #e5e5e5;">363<br> (96)<br> (22)<br> (95)<br> (150)</td>
+				
+					<td rowspan="1">★신청서식변경으로 지원신청 접수 시<br> &apos;추경1차&apos; 공고문 내 신청서식으로 접수 요망<br>---------------------------------------------------------------<br>○ 신청기간 : 2022. 2. 17.(목) 10:00  ~ 예산 소진 시까지 <br>○ 보급대수<br> - 1차 승용 : 총 900대(우선 90대, 법인·기관 270대, 택시 90대, 일반 450대)<br> - 2차 승용 : 총 206대(우선 21대, 법인·기관 62대, 택시 21대, 일반 102대)<br>○ 보급차종 : 무공해차 통합누리집 참조 <br>○ 대상자선정 : 출고·등록순 <br>※ 자세한 사항은 공고문 참조<br>※ 전화폭주로 인해 업무가 지연될 수 있으니 가능한 전화문의 자제 부탁드립니다.<br>    원본 제출하지 않으셔도 됩니다!</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">화성시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4159','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1590<br> (160)<br> (240)<br> (211)<br> (979)</td>
+				<td><br> (111)<br> (143)<br> (48)<br> (967)</td>
+				<td>819<br> (87)<br> (106)<br> (26)<br> (600)</td>
+				<td style="border-right:1px solid #e5e5e5;">771<br> (73)<br> (134)<br> (185)<br> (379)</td>
+				
+					<td rowspan="1">★ 2022년 화성시 전기자동차(승용,) 하반기 7월 1일 접수중★<br><br>*변경사항<br> ① 의무운행기간  미준수 사유에 따라 보조금 회수요율 별도 적용 (22.6.30. 보조금 접수건부터 적용)<br> ② [붙임3] 전기차 보조금 지급 신청 유의사항 동의서 <br><br>자세한 내용은 공고를 확인하여 주시길 바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">광주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4161','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>543<br> (55)<br> (164)<br> (55)<br> (269)</td>
+				<td><br> (19)<br> (37)<br> (17)<br> (380)</td>
+				<td>271<br> (10)<br> (27)<br> (3)<br> (231)</td>
+				<td style="border-right:1px solid #e5e5e5;">272<br> (45)<br> (137)<br> (52)<br> (38)</td>
+				
+					<td rowspan="1">*전기자동차(승용) 구매지원사업 추가공고*<br>※ 이전 공고[광주시 공고 제2022-540호(2022.2.21.)]로 신청한 건도 연계하여 적용함.<br>○ 보급기간 : 2022. 5. 16.(월) 10시 ~ 2022. 12. 30.(금) 또는 예산 소진 시까지<br>○ 보급대수 : 전기승용차188대(예산 범위 내에서 변동가능)<br>○ 신청 대상 : 구매신청서 접수일 기준으로 광주시에 주소를 둔지 3개월이 경과된 개인, 법인, 공공기관 등<br>○ 보조금 지원대상자 선정 통보 : 출고 등록순<br><br>※‘지급 신청’ 후 원본서류 제조·수입사에서 일괄하여 제출 (방문 또는 등기우편)<br>※ 당초 지원신청서 첨부파일들(신청서및동의서,등·초본,사업자등록증,차량구매계약서 등)도 지급신청 첨부파일들과 같이 제출하여야 함(원본 또는 원본대조필(사본) 필수).<br>   → 주소: 경기도 광주시 행정타운로 50 광주시청 7층 환경정책과 전기차 담당자 앞.<br><br>※ 세부사항은 공고문 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">양주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4163','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>328<br> (33)<br> (0)<br> (60)<br> (235)</td>
+				<td><br> (20)<br> (64)<br> (63)<br> (248)</td>
+				<td>265<br> (6)<br> (52)<br> (50)<br> (157)</td>
+				<td style="border-right:1px solid #e5e5e5;">63<br> (27)<br> (0)<br> (10)<br> (78)</td>
+				
+					<td rowspan="1">2022년 전기자동차 민간 보급사업 변경공고 <br>ㅇ 보급대수: 총 328대<br>ㅇ 신청일시: 2022. 7. 11. (월) ~ 예산 소진 시<br>※ 예산 소진 시 조기 마감 <br>※ 제조수입사 지점, 대리점(카마스터, 직원 포함)의 전기차 업무처리 (단순문의 포함) 등 관련 모든 문의는 해당 제조수입사 본사에 문의 바람</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">포천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4165','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>55<br> (6)<br> (17)<br> (17)<br> (15)</td>
+				<td><br> (7)<br> (33)<br> (22)<br> (126)</td>
+				<td>131<br> (2)<br> (25)<br> (13)<br> (91)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (4)<br> (0)<br> (4)<br> (0)</td>
+				
+					<td rowspan="1">&lt;포천시 2022년 하반기 전기자동차 보급사업 공고&gt;<br>★★ 전기승용 일반, 전기화물 법인기관 유형 물량 조기 소진<br><br>○ 접수기간: 2022. 7. 6. ~ 2022. 12. 9.(예산 소진시 까지)<br>○ 보급대수: 전기승용차 55대, 전기화물차 70대<br>○ 접수방법: 환경부 무공해차 구매보조금 지원시스템<br>○ 선정방법: 차량 출고·등록 순<br>○ 구매대수 제한<br> - 개인: 1세대당 1대<br> - 개인사업자 및 기업·법인·기관: 최대 2대</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">여주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4167','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>226<br> (23)<br> (0)<br> (0)<br> (203)</td>
+				<td><br> (2)<br> (5)<br> (2)<br> (108)</td>
+				<td>89<br> (1)<br> (2)<br> (2)<br> (84)</td>
+				<td style="border-right:1px solid #e5e5e5;">137<br> (22)<br> (0)<br> (0)<br> (119)</td>
+				
+					<td rowspan="1">○ 신청기간 : 2022. 2. 21.(월) 09:00 ~ 예산 소진 시까지 <br>○ 보급대수 <br>- 승용 : 총 300대(우선 30대, 법인·기관 90대, 택시 30대, 일반 150대)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">연천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4180','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>100<br> (10)<br> (25)<br> (10)<br> (55)</td>
+				<td><br> (0)<br> (4)<br> (2)<br> (41)</td>
+				<td>24<br> (0)<br> (3)<br> (2)<br> (19)</td>
+				<td style="border-right:1px solid #e5e5e5;">76<br> (10)<br> (22)<br> (8)<br> (36)</td>
+				
+					<td rowspan="1">ㅇ 보급대수 : 150대<br>   - 전기승용·초소형 : 약 100대(일반 50, 우선지원대상 10, 법인·기관 30, 택시 10)<br>   - 전기화물 : 약 50대(일반 30, 우선지원대상 5, 법인·기관 10, 중소기업생산물량 5<br><br> ㅇ 보급기간 : 2022. 2.　24.(목) ~ 예산 소진 시 까지<br> <br>※ 자세한 사항은 공고문 참조. (2022.2.23. 공고게제예정)<br>※ 전화폭주로 인해 업무가 지연될 수 있으니, 가능한 전화문의 자제 부탁드립니다.<br>※ 제조수입사 지점, 대리점(카마스터, 직원 포함)의 전기차 업무처리 (단순문의 포함) 등 관련 모든 문의는 해당 제조수입사 본사에 문의 바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">가평군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4182','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>200<br> (20)<br> (60)<br> (20)<br> (100)</td>
+				<td><br> (0)<br> (7)<br> (5)<br> (60)</td>
+				<td>46<br> (0)<br> (3)<br> (5)<br> (38)</td>
+				<td style="border-right:1px solid #e5e5e5;">154<br> (20)<br> (57)<br> (15)<br> (62)</td>
+				
+					<td rowspan="1">전기승용·초소형 200대(일반 100대, 법인·기관 60대 및 택시 20대, 우선지원대상 20대)<br><br>*보조금 지급 요청서 및 구매지원신청서 원본 제출 요망: 경기도 가평군 가평읍 석봉로 181 가평군청 환경정책과 대기관리팀</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경기</th>
+				
+				
+					<th rowspan="1">양평군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4183','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>380<br> (38)<br> (114)<br> (38)<br> (190)</td>
+				<td><br> (11)<br> (12)<br> (11)<br> (177)</td>
+				<td>155<br> (8)<br> (9)<br> (11)<br> (127)</td>
+				<td style="border-right:1px solid #e5e5e5;">225<br> (30)<br> (105)<br> (27)<br> (63)</td>
+				
+					<td rowspan="1">1) 전기승용·초소형 380대<br>      (일반 190대, 우선지원대상 38대, 법인·기관 114대, 택시 38대)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">춘천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4211','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>530<br> (54)<br> (159)<br> (54)<br> (263)</td>
+				<td><br> (7)<br> (153)<br> (48)<br> (285)</td>
+				<td>435<br> (4)<br> (151)<br> (48)<br> (232)</td>
+				<td style="border-right:1px solid #e5e5e5;">95<br> (50)<br> (8)<br> (6)<br> (31)</td>
+				
+					<td rowspan="1">★ 추가공고는 9월 말 예정(2회 추경 후)<br><br>○신청기간 : 2022. 2. 24. ~ 2022. 12. 30.(사업물량 소진 시 사업종료)<br>○보급대수 : 승용 530대, 화물 779대, 승합 4대<br>○지원대상 : 신청일 기준 90일 전부터 연속하여 춘천시에 주소를 둔 춘천시민 또는 법인, 기관<br>○선정기준 : 출고등록순<br>○상세내용 : 공고문 참조(차량의 금액, 구매방법 등은 제조/수입사나 대리점에 문의)<br>○추가공고 : 2회 추경 이후 공고(9월 말 예정)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">원주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4213','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>922<br> (130)<br> (275)<br> (45)<br> (472)</td>
+				<td><br> (9)<br> (245)<br> (179)<br> (365)</td>
+				<td>576<br> (3)<br> (163)<br> (137)<br> (273)</td>
+				<td style="border-right:1px solid #e5e5e5;">346<br> (127)<br> (112)<br> (0)<br> (199)</td>
+				
+					<td rowspan="1">2022년 원주시 전기자동차 공고<br>-접수기간: 2022. 2. 25.(금) 10:00 ~ 2022. 6. 30.(목) (물량 소진 시 추가공고)<br>-대상자 선정방식: 출고등록순(지원가능확인 요청 순서대로 대상자를 선정하며, 자격부여는 대상자 선정이 아님을 알려드립니다.)<br>------------------------------------------------------------------------------------------------------------------<br>원주시 상반기 법인, 택시물량 예산이 소진되었습니다. 7월 이후 하반기 추가공고를 할 수 있음을 알려드리며, <br>추가공고대수는 미정입니다.(차종별 보조금액 차이로 금액차이로 인해 계획대수와 실제 보급가능대수가 일치하지 않습니다)<br>--------------------------------------------------------------------------------------------------------------------<br>원주시 상반기 공고 상, 공공기관을 위한 별도의 예산배정은 없으며, 공공기관은 법인및기관 물량으로 진행합니다.<br>구매지원시스템상 공공기관 단순 전산접수 진행목적으로 조달대수를 입력하였으며,<br> 조달입력대수가 공공기관 별도배정물량을 의미하지 않음을 알려드립니다.<br>==================================================================<br>2022년 전기자동차 보급사업(2차)<br>접수기간<br>(승용) 일반, 법인: 2022. 6. 29.(수) ~ 2022. 12. 14.(수)<br>(승용) 택시사업자: 2022. 7. 4.(월) ~ 2022. 12. 14.(수)<br>(화물, 승합): 2022. 7. 1.(금) ~ 2022. 12. 14.(수)<br><br>지원가능확인요청 시, 차량출고증명서류 필히 첨부하시기 바랍니다.(미첨부시 대상자 선정 불가)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">강릉시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4215','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>340<br> (34)<br> (136)<br> (34)<br> (136)</td>
+				<td><br> (4)<br> (135)<br> (32)<br> (182)</td>
+				<td>303<br> (2)<br> (134)<br> (32)<br> (135)</td>
+				<td style="border-right:1px solid #e5e5e5;">37<br> (32)<br> (2)<br> (2)<br> (1)</td>
+				
+					<td rowspan="1">※ 2022.7.21 기준 수정된 동의서로 신청바랍니다(의무운행기간 내 수출,폐차 환수 적용)<br>※2회 추경 지연으로 8월 이후 하반기 공고 예정입니다※ <br>* 2022년 총보급대수 : 승용 340대, 화물 661대 <br>* 신청기준 : 출고등록순 <br>* 신청기간 : 2022.02.18~2022.12.31<br>*2022.2.21 기준 택시물량 조기소진으로 마감합니다.<br>*2022.7.13 기준 승합물량 조기소진으로 마감합니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">동해시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4217','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>91<br> (10)<br> (11)<br> (11)<br> (59)</td>
+				<td><br> (3)<br> (4)<br> (13)<br> (36)</td>
+				<td>35<br> (2)<br> (3)<br> (9)<br> (21)</td>
+				<td style="border-right:1px solid #e5e5e5;">56<br> (8)<br> (8)<br> (2)<br> (38)</td>
+				
+					<td rowspan="1">주요변경사항 : 자동차 수출 말소 의무운행기간 추가(5년, 2022.6.30 보조금 접수건 부터 적용), 서식일부 변경<br>보조금 지원금액 세부내역<br>동해시청 홈페이지&gt;고시공고&gt;2022년 하반기 전기자동차 보급사업 공고 청부파일 두번째 엑셀파일 참고</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">태백시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4219','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>122<br> (13)<br> (37)<br> (25)<br> (47)</td>
+				<td><br> (0)<br> (0)<br> (8)<br> (28)</td>
+				<td>27<br> (0)<br> (0)<br> (6)<br> (21)</td>
+				<td style="border-right:1px solid #e5e5e5;">95<br> (13)<br> (37)<br> (19)<br> (26)</td>
+				
+					<td rowspan="1">- 보급대수: 승용 72대, 화물소형 43대, 화물초소형 22대<br>- 신청기간: 2022. 7. 8.(금)~예산 소진 시 까지<br>- 신청대상: 신청(접수)일 기준 90일 전부터 태백시에 주소를 둔 18세이상 개인, 사업자, 법인<br>- 선정방법: 출고·등록순<br>* 자세한 내용은 공고문 참고</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">속초시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4221','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>76<br> (10)<br> (11)<br> (14)<br> (41)</td>
+				<td><br> (4)<br> (14)<br> (19)<br> (50)</td>
+				<td>61<br> (1)<br> (11)<br> (18)<br> (31)</td>
+				<td style="border-right:1px solid #e5e5e5;">15<br> (9)<br> (0)<br> (0)<br> (10)</td>
+				
+					<td rowspan="1">&lt;속초시 2022년도 전기자동차 보급사업 안내&gt;<br><br>1. 잔여물량(7. 20. 16:00기준) : 총113대(8월 이후 전기승용 약 70대 추가보급 예정) <br>승용 20대(일반 12 우선 8) / 화물(소형) 48대(일반 29 우선 9 중소 10)<br>화물(초소형) 34대(일반 29 우선 5) / 버스 11대<br>2. 보급기간 : 2022. 3. 2. ~ 12. 23. (보급물량 소진 시 사업 조기종료)<br>3. 보급차종 및 보조금액 : 차종별, 모델별 상이<br>(공고문 및 저공해차 통합누리집(www.ev.or.kr)에서 확인 가능)<br>4. 지원자격 : 구매신청일 기준 90일전부터 속초시에 주소를 둔 자<br>5. 지원대상자 선정방법 : 차량 출고·등록순<br><br>※ 차량 출고 전 잔여물량 반드시 확인<br>※ 의무운행기간(2년) 미준수 시「대기환경보전법 시행규칙」제79조의4제2항에 명시된 환수율에 따라 보조금을 환수함<br>※ 사업관련 문의 : 속초시 환경과 기후변화대응TF팀 033-639-2149</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">삼척시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4223','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>53<br> (5)<br> (14)<br> (5)<br> (29)</td>
+				<td><br> (3)<br> (3)<br> (5)<br> (29)</td>
+				<td>34<br> (2)<br> (2)<br> (4)<br> (26)</td>
+				<td style="border-right:1px solid #e5e5e5;">19<br> (3)<br> (12)<br> (1)<br> (3)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">홍천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4272','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>106<br> (11)<br> (32)<br> (11)<br> (52)</td>
+				<td><br> (4)<br> (3)<br> (2)<br> (42)</td>
+				<td>47<br> (2)<br> (3)<br> (2)<br> (40)</td>
+				<td style="border-right:1px solid #e5e5e5;">59<br> (9)<br> (29)<br> (9)<br> (12)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">횡성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4273','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>42<br> (5)<br> (0)<br> (0)<br> (37)</td>
+				<td><br> (2)<br> (3)<br> (10)<br> (26)</td>
+				<td>32<br> (2)<br> (2)<br> (10)<br> (18)</td>
+				<td style="border-right:1px solid #e5e5e5;">10<br> (3)<br> (0)<br> (0)<br> (19)</td>
+				
+					<td rowspan="1">□ 사업개요<br><br>1. 신청기간 : 2022. 7. 7. ~ 2022. 12. 9<br><br>2. 보급대수 : 110대<br>  - 승용 : 43대(일반 38, 우선순위 5)<br>  - 화물(경형, 소형, 소형특수) : 48대 (일반 38, 중소기업 생산물량 5, 우선순위 5)<br>  - 화물(초소형) : 18대 (일반 14, 중소기업 생산물량 2, 우선순위 2)<br>  - 승합(대형) : 1대<br>  ※ 사업 진행상황에 따라 변동될 수 있음<br>  ※ 해당 사업 잔여물량 소진시까지 진행(조기 소진 시 마감)<br><br>3. 사업내용 : 환경부 인증을 받은 전기자동차 구입 보조금 지원<br><br>4. 지원차종 : 붙임 참조<br>  ※ 향후 추가되는 차량은 저공해차 통합누리집(www.ev.or.kr)에 게재<br><br>5. 선정방법 : 출고·등록순(저공해차 구매보조그 지원시스템 &quot;지원가능확인&quot; 요청 순)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">영월군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4275','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>63<br> (5)<br> (14)<br> (5)<br> (39)</td>
+				<td><br> (0)<br> (4)<br> (7)<br> (20)</td>
+				<td>21<br> (0)<br> (3)<br> (5)<br> (13)</td>
+				<td style="border-right:1px solid #e5e5e5;">42<br> (5)<br> (11)<br> (0)<br> (26)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">평창군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4276','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>80<br> (8)<br> (0)<br> (0)<br> (72)</td>
+				<td><br> (4)<br> (3)<br> (1)<br> (31)</td>
+				<td>27<br> (4)<br> (3)<br> (1)<br> (19)</td>
+				<td style="border-right:1px solid #e5e5e5;">53<br> (4)<br> (0)<br> (0)<br> (53)</td>
+				
+					<td rowspan="1">1. 신청기간 : 2022. 7. 11.(월) 09:00 ~ 2022. 12. 15.(목)(예산 소진 시 조기 마감)<br>2. 보급수량 : 승용 80대, 화물(소형) 40대, 화물(초소형) 31대, 승합 1대<br>  ◇ 1차 공고(평창군 공고 제2022-670호) 수량이 포함되어 있으며 1차 공고 수량 중 보조금 지급이 완료된 수량은 무공해차 구매보조금 지원시스템에서 확인할 수 있음.<br>3. 신청방법<br>  ◇전기자동차 제작ㆍ수입사를 통한 온라인 접수<br>    가. 신청인 : 희망하는 전기자동차 제작ㆍ수입사와 구매계약 체결<br>    나. 제작ㆍ수입사 : 무공해차 구매보조금 지원시스템을 통한 구매 지원 신청서류 제출<br>4. 선정방법 : 출고ㆍ등록순<br>  ◇ &apos;지원확정&apos;(대상자 선정) 단계가 아닌 &apos;자격부여&apos;단계에 출고할 경우 보조금 지급 불가<br>5. 차량별 보조금액 : 붙임 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">정선군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4277','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>30<br> (9)<br> (3)<br> (3)<br> (15)</td>
+				<td><br> (0)<br> (2)<br> (1)<br> (23)</td>
+				<td>19<br> (0)<br> (1)<br> (1)<br> (17)</td>
+				<td style="border-right:1px solid #e5e5e5;">11<br> (9)<br> (2)<br> (2)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">철원군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4278','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>68<br> (6)<br> (10)<br> (14)<br> (38)</td>
+				<td><br> (1)<br> (1)<br> (12)<br> (22)</td>
+				<td>19<br> (0)<br> (0)<br> (7)<br> (12)</td>
+				<td style="border-right:1px solid #e5e5e5;">49<br> (6)<br> (10)<br> (7)<br> (26)</td>
+				
+					<td rowspan="1">- 전기자동차 보급 대수: 34대(일반22, 우선순위 3, 택시9)<br>   ※ 우선순위: 2022.9.30.까지 미교부결정물량은 일반으로 전환<br>   ※ 일반 보급 대수는 보조금 신청금액에 따라 변동 가능 <br> - 접수기간 : 2022. 7. 1.(금) 10:00 ∼ 예산소진 시까지<br>   ※ 접수기간 시작 시간부터 ‘지원가능 확인여부’ 우선 요청자 선정<br>   ※ 보급대수 소진 시 조기마감<br>- 지원대상 : 개인, 법인, 공공기관, 지방자치단체, 지방공기업 등이 전기자동차 보조금 지원 대상 자동차를 신규로 구매하여 철원군에 신규 등록할 경우<br>- 보급차량 : 보조금 지원 차량은 환경부 무공해차 통합누리집(ev.or.kr)에서 열람<br>- 접수방법 : 무공해자동차 구매보조금 지원시스템(ev.or.kr/ps) 상 온라인 접수<br>- 선정방법 : 차량 출고·등록 순</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">화천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4279','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>51<br> (5)<br> (14)<br> (5)<br> (27)</td>
+				<td><br> (1)<br> (1)<br> (0)<br> (16)</td>
+				<td>16<br> (1)<br> (1)<br> (0)<br> (14)</td>
+				<td style="border-right:1px solid #e5e5e5;">35<br> (4)<br> (13)<br> (5)<br> (13)</td>
+				
+					<td rowspan="1">가. 보급대수 : 승용 37대(우선 4, 법인 14, 택시 5, 일반 14)<br>나. 신청기간 : 2022. 7. 6. 09:00 ~ 2022. 12. 9. 18:00 (예산소진 시 사업종료)<br>다. 선정방법 : 출고등록순<br>라. 보급차종 : 무공해차 통합누리집(ev.or.kr)에서 확인가능<br>마. 신청방법 : 전기차 제조ㆍ판매사(영업점)를 통한 전산시스템(www.ev.or.kr/ps) 제출</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">양구군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4280','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>53<br> (5)<br> (16)<br> (6)<br> (26)</td>
+				<td><br> (0)<br> (2)<br> (6)<br> (26)</td>
+				<td>22<br> (0)<br> (1)<br> (4)<br> (17)</td>
+				<td style="border-right:1px solid #e5e5e5;">31<br> (5)<br> (15)<br> (2)<br> (9)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">인제군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4281','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>107<br> (15)<br> (20)<br> (5)<br> (67)</td>
+				<td><br> (2)<br> (0)<br> (6)<br> (28)</td>
+				<td>25<br> (2)<br> (0)<br> (4)<br> (19)</td>
+				<td style="border-right:1px solid #e5e5e5;">82<br> (13)<br> (20)<br> (1)<br> (48)</td>
+				
+					<td rowspan="1">상반기 물량 : 승용 52대<br>- 전기승용: 일반 22대, 법인 20대, 택시 5대, 우선순위 5대</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">고성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4282','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>56<br> (6)<br> (17)<br> (6)<br> (27)</td>
+				<td><br> (0)<br> (3)<br> (1)<br> (19)</td>
+				<td>18<br> (0)<br> (1)<br> (1)<br> (16)</td>
+				<td style="border-right:1px solid #e5e5e5;">38<br> (6)<br> (16)<br> (5)<br> (11)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">강원</th>
+				
+				
+					<th rowspan="1">양양군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4283','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>49<br> (4)<br> (15)<br> (0)<br> (30)</td>
+				<td><br> (0)<br> (13)<br> (4)<br> (20)</td>
+				<td>24<br> (0)<br> (7)<br> (4)<br> (13)</td>
+				<td style="border-right:1px solid #e5e5e5;">25<br> (4)<br> (8)<br> (0)<br> (17)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">청주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4311','N','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>2900<br> (300)<br> (1000)<br> (400)<br> (1200)</td>
+				<td><br> (104)<br> (1046)<br> (445)<br> (1269)</td>
+				<td>2450<br> (84)<br> (999)<br> (361)<br> (1006)</td>
+				<td style="border-right:1px solid #e5e5e5;">450<br> (216)<br> (1)<br> (39)<br> (194)</td>
+				
+					<td rowspan="1">&lt; 8.17.(수) 09:00 잔여대수 공지 &gt; <br>- 승용 : 일반 130 / 우선순위 190 / 택시, 법인 0(선정 보류)<br>- 화물 : 일반, 우선순위, 법인 0(선정 보류) / 중소기업  20 <br>- 물량소진 시 대상자 선정 보류 및 출고 취소차량 있을 경우 추가 선정<br>--------------------------------------------------------------------------------<br>○ 지원사업(2차) 신청서식으로 신청 필(유의사항 동의서 변경)<br>   (시홈페이지&gt;시정소식&gt;고시공고 또는 무공해차시스템 공고파일 다운로드) <br>○ 원본서류 미제출(전산등록 시 모든 서류를 1개의 PDF파일로 합쳐서 첨부)<br>○ 자격부여 및 대상자 선정 후 문자통보하지 않으므로 시스템 직접 확인 요망<br>○ 민원전화 폭주로 업무처리가 지연되므로 전화문의는 자제해 주시기 바랍니다.<br>--------------------------------------------------------------------------------------------<br>○ 접수기간 : 2022. 7. 1. 09:00 ~ 2022. 12. 9. 18:00 (예산 소진 시까지) <br>○ 보급대수 : 1,140대 (승용 900, 화물 240, 상반기 잔여분 미포함)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">충주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4313','N','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>419<br> (47)<br> (140)<br> (12)<br> (220)</td>
+				<td><br> (6)<br> (132)<br> (21)<br> (220)</td>
+				<td>252<br> (6)<br> (94)<br> (12)<br> (140)</td>
+				<td style="border-right:1px solid #e5e5e5;">167<br> (41)<br> (46)<br> (0)<br> (80)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">제천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4315','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>350<br> (35)<br> (100)<br> (65)<br> (150)</td>
+				<td><br> (6)<br> (76)<br> (27)<br> (157)</td>
+				<td>170<br> (4)<br> (62)<br> (24)<br> (80)</td>
+				<td style="border-right:1px solid #e5e5e5;">180<br> (31)<br> (38)<br> (41)<br> (70)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">보은군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>78<br> (8)<br> (22)<br> (8)<br> (40)</td>
+				<td><br> (1)<br> (5)<br> (8)<br> (35)</td>
+				<td>21<br> (0)<br> (3)<br> (0)<br> (18)</td>
+				<td style="border-right:1px solid #e5e5e5;">57<br> (8)<br> (19)<br> (8)<br> (22)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">옥천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4373','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>120<br> (12)<br> (21)<br> (7)<br> (80)</td>
+				<td><br> (13)<br> (8)<br> (14)<br> (84)</td>
+				<td>47<br> (5)<br> (5)<br> (3)<br> (34)</td>
+				<td style="border-right:1px solid #e5e5e5;">73<br> (7)<br> (16)<br> (4)<br> (46)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">영동군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4374','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>100<br> (10)<br> (30)<br> (15)<br> (45)</td>
+				<td><br> (7)<br> (3)<br> (21)<br> (76)</td>
+				<td>67<br> (5)<br> (3)<br> (10)<br> (49)</td>
+				<td style="border-right:1px solid #e5e5e5;">33<br> (5)<br> (27)<br> (5)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">증평군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','43745','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>23<br> (2)<br> (1)<br> (2)<br> (18)</td>
+				<td><br> (1)<br> (1)<br> (5)<br> (22)</td>
+				<td>19<br> (1)<br> (1)<br> (4)<br> (13)</td>
+				<td style="border-right:1px solid #e5e5e5;">4<br> (1)<br> (0)<br> (0)<br> (5)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">진천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4375','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>298<br> (29)<br> (90)<br> (29)<br> (150)</td>
+				<td><br> (8)<br> (8)<br> (11)<br> (142)</td>
+				<td>120<br> (4)<br> (6)<br> (11)<br> (99)</td>
+				<td style="border-right:1px solid #e5e5e5;">178<br> (25)<br> (84)<br> (18)<br> (51)</td>
+				
+					<td rowspan="1">1. 신청기간 : 2022. 2. 14.(월) ~ 예산 소진 시까지<br>2. 보급대수 : 승용 약297대(일반150, 법인·기관 89, 우선29, 택시 29) ※예산범위 내 사업량은 변경될 수 있음<br>3. 선정방법 : 구매보조금 지원시스템(ev.or.kr) 출고,등록순<br>4. 기타 자세한 사항은 진천군 공고 제2022-190호 참고</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">괴산군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4376','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>220<br> (23)<br> (30)<br> (10)<br> (157)</td>
+				<td><br> (2)<br> (2)<br> (0)<br> (38)</td>
+				<td>35<br> (2)<br> (2)<br> (0)<br> (31)</td>
+				<td style="border-right:1px solid #e5e5e5;">185<br> (21)<br> (28)<br> (10)<br> (126)</td>
+				
+					<td rowspan="1">2022.07.18.(월) 09시부터 접수시작(출고,등록순)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">음성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4377','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>170<br> (23)<br> (36)<br> (12)<br> (99)</td>
+				<td><br> (7)<br> (22)<br> (6)<br> (126)</td>
+				<td>93<br> (1)<br> (16)<br> (5)<br> (71)</td>
+				<td style="border-right:1px solid #e5e5e5;">77<br> (22)<br> (20)<br> (7)<br> (28)</td>
+				
+					<td rowspan="1">☆2022. 8. 2.(화) 신청접수중입니다.☆<br><br>★ 하반기 접수기간: 2022. 8. 2.(화) ~ 예산 소진 시까지<br>★ 선정방법: 출고등록순<br><br>☆ 시스템 상 잔여대수와 실제 잔여대수는 상이하니 유선으로 확인 바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충북</th>
+				
+				
+					<th rowspan="1">단양군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4380','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>76<br> (8)<br> (21)<br> (8)<br> (39)</td>
+				<td><br> (4)<br> (1)<br> (9)<br> (45)</td>
+				<td>35<br> (3)<br> (1)<br> (6)<br> (25)</td>
+				<td style="border-right:1px solid #e5e5e5;">41<br> (5)<br> (20)<br> (2)<br> (14)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">천안시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4413','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>489<br> (50)<br> (147)<br> (42)<br> (250)</td>
+				<td><br> (62)<br> (217)<br> (55)<br> (367)</td>
+				<td>489<br> (50)<br> (147)<br> (42)<br> (250)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (0)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">※ 차종에 따른 보조금 차이로 인해 지원대수는 예산내에서 변동될 수 있습니다.<br><br> - 본예산 : 승용 (일반,  법인.기관, 우선순위, 택시) 물량 전체 마감됨<br><br> - 2회추경 : 9월 추경 예정</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">공주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4415','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>150<br> (15)<br> (45)<br> (15)<br> (75)</td>
+				<td><br> (16)<br> (23)<br> (9)<br> (116)</td>
+				<td>136<br> (13)<br> (15)<br> (9)<br> (99)</td>
+				<td style="border-right:1px solid #e5e5e5;">14<br> (2)<br> (30)<br> (6)<br> (0)</td>
+				
+					<td rowspan="1">&lt;전기화물차&gt; <br>- 중소기업생산물량 초소형 1대 선정 가능(보조금금액 : 935만원)<br>- 일반, 법인, 우선순위 접수 마감(5/12), 추경일정 8월 예상(50대) <br><br>&lt;전기승용차&gt;<br>- 일반 접수 마감(5/30)<br>- 법인, 택시 잔여 물량 7/1 일반 통합 예정(7/1부터 잔여물량 일반 대상자 선정)<br>- 일반,법인,택시 통합물량 마감 (8/5)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">보령시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4418','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>101<br> (11)<br> (27)<br> (11)<br> (52)</td>
+				<td><br> (15)<br> (11)<br> (1)<br> (92)</td>
+				<td>78<br> (11)<br> (5)<br> (0)<br> (62)</td>
+				<td style="border-right:1px solid #e5e5e5;">23<br> (0)<br> (22)<br> (11)<br> (0)</td>
+				
+					<td rowspan="1">○ 접수기간 : 2022 .5. 12.(수) ~ 예산 소진 시까지<br>○ 사업물량 : 약 60대 (일반 15, 법인·기관 31, 택시 11, 우선순위 3)<br>※ 유형별 예산 범위 내에서 사업 물량은 변동될 수 있음<br>※ 법인·기관 구매 시 지방비의 50% 감액 지원<br>○ 모든 제출서류 원본은 보조금 신청 시 제작·수입사에서 일괄하여 ‘충남 보령시 성주산로 77, 보령시청 3층 환경보호과’ 로 방문 또는 우편 제출</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">아산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4420','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>625<br> (63)<br> (189)<br> (63)<br> (310)</td>
+				<td><br> (70)<br> (194)<br> (56)<br> (431)</td>
+				<td>616<br> (52)<br> (183)<br> (50)<br> (331)</td>
+				<td style="border-right:1px solid #e5e5e5;">9<br> (11)<br> (6)<br> (13)<br> (0)</td>
+				
+					<td rowspan="1">▶전기자동차(승용) 3차 보급물량 현황◀(2022. 8. 17. 09:00기준)<br> <br>○ 일반,법인 통합 물량 : 마감(7월 19일 마감)<br>---------------------------------------------------------------------------<br>○ 우선순위 잔여물량 : 1대<br>○ 택시 잔여물량 : 12대 <br><br>**우선순위, 택시 잔여물량은 10. 1.일부터 일반물량과 통합(별도 공고 없음)**<br><br>==&gt;10월 4일 9시부터 지원가능확인 요청 가능(출고 10일 이내 차량만 신청가능하며, 출고 확정본 반드시 첨부)<br><br>**향후 추가 공고 계획은 없으나, 변동사항 발생 시 공지하겠습니다.**</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">서산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4421','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>340<br> (34)<br> (20)<br> (10)<br> (276)</td>
+				<td><br> (17)<br> (39)<br> (6)<br> (340)</td>
+				<td>297<br> (13)<br> (28)<br> (6)<br> (250)</td>
+				<td style="border-right:1px solid #e5e5e5;">43<br> (21)<br> (0)<br> (4)<br> (26)</td>
+				
+					<td rowspan="1">○ 접수기간 : 2022. 2. 22. 13:00 ~ 2022. 11. 30. 18:00<br>○ 보급대수<br>- 승용 340대(일반 276, 우선 34, 택시 10, 법인기관 20)<br>- 화물 140대(일반 84, 우선 14, 중소기업 14, 법인기관 28)<br>○ 선정방법 : 자동차 출고·등록 순<br>○ 신청자격 : 서산시민, 서산시 소재 법인기관 등<br>○ 신청기준 : 승용 개인 1대, 법인·기관 1대<br><br>* 환경부 업무처리 지침 변경 및 하반기 사업 실시에 따라 6. 30. 이전에 접수된 90일 초과된 건은 재접수 해주시기 바랍니다.<br>* 원활한 업무 처리를 위해 자동차 대리점 및 지점 직원의 단순 문의사항(보조금 금액, 처리절차 등) 해당 제조수입사의 원무과에 문의해주시기 바라며, 차량이 확보되어 자격부여 요청은 원무과를 통해 연락주시기 바랍니다.<br><br>※ 8. 3. 10시 기준 잔여대수  : 승용 일반 7대,  법인 8대,  우선순위 21대, 택시 8대</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">논산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4423','Y','Y' ,'Y','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>132<br> (9)<br> (28)<br> (7)<br> (88)</td>
+				<td><br> (4)<br> (8)<br> (7)<br> (100)</td>
+				<td>55<br> (1)<br> (2)<br> (1)<br> (51)</td>
+				<td style="border-right:1px solid #e5e5e5;">77<br> (8)<br> (26)<br> (6)<br> (37)</td>
+				
+					<td rowspan="1">하반기 승용차 보급사업 안내<br>1. 사 업 명 : 2022년 전기승용차 보급사업 재공고<br>2. 신청기간 : 2022. 7. 27.(수) ~ 11. 30.(수)<br>3. 신청방법 : 구입을 희망하는 전기승용차 제조/판매사에 방문하여 구매계약서 및 구매신청서 작성 및 접수<br>4. 사 업 량 : 27대 (일반/법인기관/택시 21대, 우선순위 6대)<br>5. 지원금액 : 최대 1,400만원(차량별 보조금 상이)<br>6. 지원대상 : 신청일 기준 1개월 이전부터 연속하여 논산에 주소를 둔 만18세 이상 논산시민, 법인, 단체 등<br>7. 대상자 선정 방법 : 출고/등록순(지원가능 확인요청 순(차량출고가능 전산 필수))<br>자세한 사항은 논산시청 홈페이지 공고문(첨부파일), 영업점(대리점,지점) 또는 무공해차 구매보조금 지원시스템(http://www.ev.or.kr/ps)을 참고해주세요.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">계룡시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4425','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>170<br> (17)<br> (51)<br> (17)<br> (85)</td>
+				<td><br> (2)<br> (4)<br> (0)<br> (70)</td>
+				<td>57<br> (2)<br> (4)<br> (0)<br> (51)</td>
+				<td style="border-right:1px solid #e5e5e5;">113<br> (15)<br> (47)<br> (17)<br> (34)</td>
+				
+					<td rowspan="1">○ 보급대수 : 전기승용차 약 70대(일반 35, 우선 7, 법인,기관 21, 택시 7)<br>           ※ 우선순위 10.1.부터 / 법인,기관 및 택시 7.1.부터 일반물량과 통합하여 진행<br>           ※ 최종 보급대수는 보급 추이에 따라 변동 가능<br>○ 지원자격 : 접수일 기준 3개월전부터 계룡시에 연속하여 주소를 둔 만18세 이상의 계룡시민<br>          ※ 법인·기관의 경우 접수일 기준 3개월전부터 계룡시에 소재<br>○ 지원대수 : 개인별 1대(세대 내 중복 지원 가능)<br>○ 지원제한 : 최근 2년 내 정부 및 지자체 보조금을 수령하여 전기승용차를 구매한 이력이 있는 자<br>○ 지원금액 : 1대당 최대 1,400만원(단, 법인·기관이 구매하는 경우 지방비 보조금을 일반개인에 지급하는 보조금의 50%만 지급)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">당진시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4427','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>527<br> (53)<br> (158)<br> (53)<br> (263)</td>
+				<td><br> (32)<br> (165)<br> (21)<br> (514)</td>
+				<td>544<br> (16)<br> (158)<br> (16)<br> (354)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (37)<br> (0)<br> (37)<br> (0)</td>
+				
+					<td rowspan="1">○ 전기승용 527대(일반 263대, 법인기관 158대, 택시 53대, 우선순위 53대)<br>  ※ 보급대수는 예산범위 내에서 변동 될 수 있음<br> <br><br>★★★★★★★★★★★★★★★★★★★★★★★★<br>     2022.8.5. 11:00 기준 잔여대수 물량 <br>일반, 법인, 택시 (통합보급) : 45,   우선: 27<br>★★★★★★★★★★★★★★★★★★★★★★★★<br><br><br><br>○ 10월 이후 우선물량 통합 보급 예정</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">금산군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4471','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>125<br> (13)<br> (49)<br> (13)<br> (50)</td>
+				<td><br> (2)<br> (5)<br> (2)<br> (53)</td>
+				<td>44<br> (1)<br> (4)<br> (2)<br> (37)</td>
+				<td style="border-right:1px solid #e5e5e5;">81<br> (12)<br> (45)<br> (11)<br> (13)</td>
+				
+					<td rowspan="1">1차 공고 마감<br><br>2차 공고<br>승용 총 104대(일반 31대, 우선순위 12대, 법인 기관 49대, 택시 12대)<br>화물 일반(개인, 개인사업자, 법인, 우선순위) 마감(중소기업 물량 잔여O)<br><br>*(필수) 2022. 06. 30. 신청분 부터 의무운행기간 조정(22년 6월 지침 변경)<br> - 일     반 : 의무운행기간 2년(기존 요율 적용)<br> - (신설)수출 목적 등록 말소 : 5년(별도 요율 적용)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">부여군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4476','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>125<br> (13)<br> (27)<br> (9)<br> (76)</td>
+				<td><br> (4)<br> (14)<br> (7)<br> (118)</td>
+				<td>64<br> (2)<br> (7)<br> (1)<br> (54)</td>
+				<td style="border-right:1px solid #e5e5e5;">61<br> (11)<br> (20)<br> (8)<br> (22)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">서천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4477','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>109<br> (9)<br> (32)<br> (9)<br> (59)</td>
+				<td><br> (4)<br> (3)<br> (2)<br> (46)</td>
+				<td>40<br> (3)<br> (3)<br> (2)<br> (32)</td>
+				<td style="border-right:1px solid #e5e5e5;">69<br> (6)<br> (29)<br> (7)<br> (27)</td>
+				
+					<td rowspan="1">접수기간 : 2022.5.18.(수) 09:00 ~ 예산 소진 시<br>승용 : 일반 36대, 법인기관 32대, 우선순위 9대, 택시 9대 <br>    ※ 차종별 보급 대수는 예산 소진에 따라 변동 가능<br>    ※ 우선순위 지원 잔여분은 4분기에 일반지원 대수로 전환<br>    ※ 승용(법인,기관) 물량 및 택시물량 잔여분은 3분기 이후 일반지원 대수로 전환<br>    ※ 법인,기관이 전기승용차를 구매하는 경우 일반(개인)에 지급하는 지방비 보조금의 50%지급<br>    ※제작·수입사는 자동차 출고가 10일 이내로 확정되는 시점에서 출고배정서 전산화면을 첨부하여 ‘지원 가능 확인 요청’</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">청양군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4479','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>109<br> (9)<br> (24)<br> (6)<br> (70)</td>
+				<td><br> (9)<br> (7)<br> (3)<br> (48)</td>
+				<td>36<br> (6)<br> (5)<br> (1)<br> (24)</td>
+				<td style="border-right:1px solid #e5e5e5;">73<br> (3)<br> (19)<br> (5)<br> (46)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">홍성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4480','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>175<br> (18)<br> (0)<br> (20)<br> (137)</td>
+				<td><br> (8)<br> (10)<br> (2)<br> (117)</td>
+				<td>111<br> (6)<br> (9)<br> (2)<br> (94)</td>
+				<td style="border-right:1px solid #e5e5e5;">64<br> (12)<br> (0)<br> (18)<br> (43)</td>
+				
+					<td rowspan="1">대상자 선정 후 출고 완료된 건만 원본 서류 송부바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">예산군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4481','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>166<br> (13)<br> (4)<br> (0)<br> (149)</td>
+				<td><br> (8)<br> (8)<br> (4)<br> (89)</td>
+				<td>75<br> (5)<br> (5)<br> (3)<br> (62)</td>
+				<td style="border-right:1px solid #e5e5e5;">91<br> (8)<br> (0)<br> (0)<br> (87)</td>
+				
+					<td rowspan="1">잔여대수 : 일반 92대, 우선순위 10대[2022.07.12.수정]<br><br>◎접수기간 : 2022.7.1.(금) ∼ 2022.11.30.(수)18:00 (예산 소진 시 조기 마감) <br>◎보급대수-승용 : 일반 97대, 우선순위 10대 <br>※ 보급 대수는 보급여건 및 예산범위 내에서 변동될 수 있음<br>※ 우선순위 물량 4분기부터 일반물량과 통합 보급 예정<br>※ 승용 법인·기관 신청 시, 개인에 지급하는 지방 보조금(도비, 군비)의 50% 지원</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">충남</th>
+				
+				
+					<th rowspan="1">태안군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','44825','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 접수순</td>
+				<td>50<br> (4)<br> (12)<br> (4)<br> (30)</td>
+				<td><br> (4)<br> (2)<br> (2)<br> (44)</td>
+				<td>32<br> (4)<br> (2)<br> (1)<br> (25)</td>
+				<td style="border-right:1px solid #e5e5e5;">18<br> (0)<br> (10)<br> (3)<br> (5)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">전주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4511','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>1000<br> (100)<br> (320)<br> (200)<br> (380)</td>
+				<td><br> (202)<br> (342)<br> (429)<br> (1016)</td>
+				<td>400<br> (40)<br> (147)<br> (48)<br> (165)</td>
+				<td style="border-right:1px solid #e5e5e5;">600<br> (60)<br> (173)<br> (152)<br> (215)</td>
+				
+					<td rowspan="1">1. 신청기간(하반기): 22. 8. 8 (09:00) ~ 8. 12 (19:00)  ※접수기간 끝난 후 진행상황에 따라 2차 접수기간 열릴 수 있음<br>2. &quot;지원가능확인&quot; 요청 가능 일자: 22. 8. 16. (09:00) ~ <br>3. 하반기 보급대수 : 승용 600대 (일반 205, 택시 150, 우선순위 60, 법인기관 180, 미세먼지 안심관리구역 5)<br>                                화물 300대 (일반 180, 우선순위 30, 법인기관 60, 중소기업생산제품 30)<br><br>※ 하반기 공고대수는 총괄현황의 대수 대신 위의 보급대수로 봐주시길 바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">군산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4513','Y','Y' ,'Y','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>350<br> (35)<br> (105)<br> (35)<br> (175)</td>
+				<td><br> (56)<br> (85)<br> (158)<br> (428)</td>
+				<td>383<br> (38)<br> (67)<br> (64)<br> (214)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (38)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">※ 전기승용 일반물량(법인, 택시포함) 지원대상자 선정완료<br>   (2022-07-19 17:50기준)<br>  - 취소분 발생시 후순위자(지원가능요청한 건)에게 선정검토 진행합니다.<br>=================================================<br>&lt;2022년 하반기 전기자동차 민간보급사업&gt;<br>○ 접수기간 : 2022. 07. 15(금) 10:00 ~ 예산소진시까지<br>○ 하반기 보급대수 : 승용 32대<br> - 2022. 7. 1.부터 법인·기관 및 택시 잔여물량은 일반물량으로 통합하여 대상자 확정 가능<br> - 2022. 10. 1.부터 우선순위 잔여물량으로 일반물량으로 통합하여 대상자 확정 가능 <br> ※ 차종별 지원금 차등으로 보급대수 변경가능<br> ※ 추후 보급물량 변동 시 별도 공고없이 시스템에 반영하여 보급추진<br>○ 선정방법 : 구매보조금 지원시스템 출고·등록순<br>○ 자세한 사항은 공고문 참조하시기 바랍니다.<br> ※ 법인기관차량 중 소상공인의 경우 소상공인확인서(중소기업현황정보시스템에서 발급) 제출 바람<br> ※ 지급신청한 후 지원신청서류 및 지급신청서류 원본제출바람<br>     (우편주소 : 전라북도 군산시 시청로 17, 군산시청 환경정책과 전기차 담당자앞)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">익산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4514','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>420<br> (0)<br> (0)<br> (0)<br> (420)</td>
+				<td><br> (34)<br> (18)<br> (121)<br> (280)</td>
+				<td>251<br> (18)<br> (7)<br> (75)<br> (151)</td>
+				<td style="border-right:1px solid #e5e5e5;">169<br> (0)<br> (0)<br> (0)<br> (269)</td>
+				
+					<td rowspan="1">※2022년 하반기 익산시 전기자동차(승용·화물) 민간보급사업 공고※<br>- 신청기간: 2022. 8. 11.(목) 09:00 ~ 예산소진시까지<br>- 보급대수: 200대<br>- 보급대상: 기업,법인,사업자,단체 등(1세대 당 1대)<br>- 선정방법: 출고등록순<br>- 신청방법: 환경부 전기자동차 포털(www.ev.or.kr)에 접수<br><br>☆ 유의사항 ☆<br>- 전라북도 및 익산시 보조금을 지급받은 전기자동차 구매자는 2년간의 의무운행기간을 전라북도 내에서 준수하여야 함<br>- 전라북도 내에서 의무운행기간 미준수(타시도 판매) 시에는 환수율에 따라 지방비(도·시비) 보조금을 환수함<br><br>구매 보조금 지급신청서,  보조금 교부 신청서 원본은 제작·판매사에서 일괄하여 익산시로 제출<br>(주소 : 전라북도 익산시 무왕로 1397 동문, 환경정책과)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">정읍시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4518','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>189<br> (20)<br> (30)<br> (36)<br> (103)</td>
+				<td><br> (23)<br> (9)<br> (37)<br> (185)</td>
+				<td>118<br> (12)<br> (5)<br> (16)<br> (85)</td>
+				<td style="border-right:1px solid #e5e5e5;">71<br> (8)<br> (25)<br> (20)<br> (18)</td>
+				
+					<td rowspan="1">&lt;2022년 하반기 전기자동차 보급사업&gt;<br>○ 신청기간 : 2022.7.11.(월) 09:00 ~ 12.09.(금), 예산소진시까지<br>○ 보급대수 : 219대(전기 승용차 117대, 전기화물차 102대)<br>○ 선정방법 : 차량 출고등록순<br>○지원대수 : 1대(개인, 기업, 법인, 사업자, 단체 등)<br><br>** 전라북도 및 정읍시 보조금을 지급받은 전기자동차 구매자는 의무운행기간을 전라북도 내에서 준수하여야 함<br>    ( 전라북도 내에서 의무운행기간 미준수(타시도 판매) 시에는 환수율에 따라 지방비(도·시비) 보조금을 환수함)<br>** 신청서 처리기한 7일이내 (당일불가)<br>** 지급신청한후 지원신청서류 및 지급신청서류 원본제출바람<br>     (우편주소 : 전라북도 정읍시 충정로 234, 정읍시청 환경과 전기차 담당자앞)<br>★ 시스템의 출고잔여 대수는 실제 잔여대수와 다를 수 있으므로 담당자에게 확인바랍니다 ★</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">남원시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4519','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순(보조금 지원가능 확인요청 제출순)<br>*우선: 출고등록순(보조금 지원가능 확인요청 제출순)</td>
+				<td>157<br> (16)<br> (30)<br> (10)<br> (101)</td>
+				<td><br> (13)<br> (12)<br> (13)<br> (118)</td>
+				<td>103<br> (9)<br> (10)<br> (11)<br> (73)</td>
+				<td style="border-right:1px solid #e5e5e5;">54<br> (7)<br> (20)<br> (0)<br> (28)</td>
+				
+					<td rowspan="1">사업 추진 중</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">김제시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4521','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>98<br> (10)<br> (18)<br> (6)<br> (64)</td>
+				<td><br> (9)<br> (23)<br> (16)<br> (124)</td>
+				<td>94<br> (5)<br> (22)<br> (5)<br> (62)</td>
+				<td style="border-right:1px solid #e5e5e5;">4<br> (5)<br> (0)<br> (1)<br> (2)</td>
+				
+					<td rowspan="1">○ 전기자동차 신청기간 : 2022.7.20.(수)~예산소진 시까지<br>○ 사업물량 : 총70대(승용38대, 화물 32대)<br>○ 보급차종 : 무공해차 통합누리집 참조<br>○ 대상자선정 : 출고·등록순(지원가능확인요청순)<br>※ 기타 자세한 사항은 공고문 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">완주군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4571','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>70<br> (7)<br> (17)<br> (7)<br> (39)</td>
+				<td><br> (14)<br> (20)<br> (11)<br> (132)</td>
+				<td>69<br> (7)<br> (12)<br> (9)<br> (41)</td>
+				<td style="border-right:1px solid #e5e5e5;">1<br> (0)<br> (5)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">진안군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4572','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>57<br> (5)<br> (12)<br> (4)<br> (36)</td>
+				<td><br> (5)<br> (2)<br> (1)<br> (59)</td>
+				<td>29<br> (3)<br> (2)<br> (0)<br> (24)</td>
+				<td style="border-right:1px solid #e5e5e5;">28<br> (2)<br> (10)<br> (4)<br> (12)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">무주군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4573','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>86<br> (10)<br> (17)<br> (5)<br> (54)</td>
+				<td><br> (1)<br> (2)<br> (4)<br> (34)</td>
+				<td>24<br> (0)<br> (2)<br> (3)<br> (19)</td>
+				<td style="border-right:1px solid #e5e5e5;">62<br> (10)<br> (15)<br> (2)<br> (35)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">장수군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>40<br> (3)<br> (9)<br> (3)<br> (25)</td>
+				<td><br> (5)<br> (2)<br> (1)<br> (45)</td>
+				<td>28<br> (3)<br> (1)<br> (1)<br> (23)</td>
+				<td style="border-right:1px solid #e5e5e5;">12<br> (0)<br> (8)<br> (2)<br> (2)</td>
+				
+					<td rowspan="1">0신청기간 : 2022. 7. 13(수) ~ 12. 09(금)<br>0보급대수 : 승용전기자동차 10대(일반 10대)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">임실군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4575','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>43<br> (4)<br> (10)<br> (3)<br> (26)</td>
+				<td><br> (1)<br> (5)<br> (1)<br> (42)</td>
+				<td>33<br> (1)<br> (5)<br> (1)<br> (26)</td>
+				<td style="border-right:1px solid #e5e5e5;">10<br> (3)<br> (5)<br> (2)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">순창군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4577','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>2<br> (0)<br> (0)<br> (0)<br> (2)</td>
+				<td><br> (2)<br> (4)<br> (2)<br> (29)</td>
+				<td>16<br> (2)<br> (3)<br> (1)<br> (10)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (0)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">고창군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4579','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>50<br> (5)<br> (0)<br> (5)<br> (40)</td>
+				<td><br> (5)<br> (4)<br> (3)<br> (47)</td>
+				<td>31<br> (5)<br> (4)<br> (2)<br> (20)</td>
+				<td style="border-right:1px solid #e5e5e5;">19<br> (0)<br> (0)<br> (3)<br> (20)</td>
+				
+					<td rowspan="1">2022년 하반기 고창군 신청기간 : 8. 8.(월) ~ 예산소진시<br>2022년 8월 17일 수요일 11:00 현재<br>남은물량 : 10대</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전북</th>
+				
+				
+					<th rowspan="1">부안군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4580','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>30<br> (2)<br> (6)<br> (3)<br> (19)</td>
+				<td><br> (4)<br> (3)<br> (4)<br> (49)</td>
+				<td>41<br> (4)<br> (2)<br> (4)<br> (31)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (4)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">전기승용차<br>전체 30대<br>일반 19대<br>법인 6대<br>택시 3대<br>우선순위 2대<br>신청서류 <br>○ (개인) 전기차 구매 지원신청서, 차량구매계약서, 주민등록초본*<br> ○ (법인, 단체, 공공기관)<br>   - 사업자등록증 또는 등기부등본, 전기차 구매 지원 신청서, 차량구매계약서<br> ○ 추가서류 (우선지원 신청자에 한함)<br>  ① 다자녀가구 : 가족관계증명서<br>  ② 취약계층 : 장애인등록증, 기초생활수급자 증명서, 차상위 증명서<br>     국가유공자확인원<br>  ③ 소상공인 : 소상공인 확인서(중소기업현황정보시스템 발급)<br>  ④생애 최초 차량 : 지방세 세목별 과세증명서 중 자동차세 미과세 증명서      <br>       (이전 주소지 포함)<br>  ⑤전기택시 : 택시 사업자 면허증 사본<br>      ※ 개인택시 등 개인영업용 차량의 경우 사용본거지를 기준으로 함<br>  ⑥ 노후경유차 폐차 : 보조금 청구 시 경유차 말소등록증 사본<br>  ⑦ K-EV100 참여업체 확인 서류<br>  * 주민등록초본은 신청서 접수일 기준 1개월 이내 발급된 상세내역이 포함된 서류<br>선정방법: 차량 차량 출고·등록 순</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">목포시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4611','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>147<br> (10)<br> (28)<br> (20)<br> (89)</td>
+				<td><br> (9)<br> (50)<br> (39)<br> (128)</td>
+				<td>136<br> (8)<br> (32)<br> (20)<br> (76)</td>
+				<td style="border-right:1px solid #e5e5e5;">11<br> (2)<br> (0)<br> (0)<br> (13)</td>
+				
+					<td rowspan="1">1. 신청기간 : 2022. 3. 3.(목) ~ 3. 11.(금)<br>※ 신청기간 내 신청대수가 미달되는 경우 신청기간을 ‘22. 6. 30.까지 연장하며,   예산범위 내에서 대상자 선정<br>2. 보급대수 : 승용 98대<br>※ 사업물량은 보급여건 및 예산 범위 내에서 변동될 수 있음 <br>3. 선정방법 : 차량 출고,등록순 <br>- 차종별 지방비는 구매보조금 지원시스템에서 확인 필요 <br>4. 기타 자세한 사항은 목포시 공고 제2022-377호 참조<br>※ 첨부파일 제출시 안내문구 확인</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">여수시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4613','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>299<br> (25)<br> (75)<br> (35)<br> (164)</td>
+				<td><br> (18)<br> (27)<br> (37)<br> (229)</td>
+				<td>278<br> (18)<br> (26)<br> (34)<br> (200)</td>
+				<td style="border-right:1px solid #e5e5e5;">21<br> (7)<br> (49)<br> (1)<br> (0)</td>
+				
+					<td rowspan="1">1. 신청기간 : 2022. 2. 16.(수) ~ 예산 소진 시까지 <br>2. 보급대수 : 승용 250대, 화물 200대 <br> ※ 사업물량은 보급여건 및 예산 범위 내에서 변동될 수 있음.<br>3. 선정방법 : 구매보조금 지원시스템(ev.or.kr)에서 출고,등록순 <br>- 차종별 지방비는 구매보조금 지원시스템에서 확인 필요. <br>- 구매보조금 지원시스템 정상운영시부터 접수 <br>4. 기타 자세한 사항은 여수시 공고 제2022-500호 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">순천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4615','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>655<br> (65)<br> (197)<br> (65)<br> (328)</td>
+				<td><br> (34)<br> (89)<br> (48)<br> (464)</td>
+				<td>523<br> (26)<br> (86)<br> (41)<br> (370)</td>
+				<td style="border-right:1px solid #e5e5e5;">132<br> (39)<br> (111)<br> (24)<br> (0)</td>
+				
+					<td rowspan="1">1. 신청기간 : 2022. 2. 16.(수) ~ 예산 소진 시까지<br>2. 보급대수 : 승용 약 655대(일반 328, 법인·기관 197, 우선 65, 택시 65)<br>   ※ 예산범위 내 사업량은 변경될 수 있음<br>3. 선정방법 : 구매보조금 지원시스템(ev.or.kr)에서 출고,등록순<br>   - 차종별 지방비는 구매보조금 지원시스템에서 확인 필요. <br>4. 기타 자세한 사항은 순천시 공고 제2022-924호 참고</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">나주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4617','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>80<br> (8)<br> (22)<br> (7)<br> (43)</td>
+				<td><br> (9)<br> (24)<br> (9)<br> (49)</td>
+				<td>84<br> (9)<br> (22)<br> (8)<br> (45)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (0)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">※ 1차 상반기 공고물량 소진 완료되었습니다.<br>※ 하반기 전기자동차 2차 보급예정이오니, 조금만 기다려주시기 바랍니다.(9월 초중순 예상)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">광양시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4623','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>451<br> (46)<br> (136)<br> (46)<br> (223)</td>
+				<td><br> (10)<br> (59)<br> (11)<br> (305)</td>
+				<td>331<br> (8)<br> (52)<br> (11)<br> (260)</td>
+				<td style="border-right:1px solid #e5e5e5;">120<br> (38)<br> (84)<br> (35)<br> (0)</td>
+				
+					<td rowspan="1">&lt;2022년 전기자동차 보급사업&gt;<br><br>1. 신청기간 : 2022. 2.23 .(수) ∼ 예산 소진시까지<br>2. 보급물량 : 승용 451대  (일반 223, 우선순위 46, 법인기관 136, 택시 46)<br>                     화물 222대  (일반 131, 우선순위 23, 법인기관 45, 중소기업생산물량 23)<br>3. 지원대수 : 개인(사업자) 1대, 법인·기관·단체 최대 3대<br>4. 지원금액<br>   - 승용전기차 : (승용) 최대 1,550만원/대      (초소형) 885만원/대<br>4. 지원금액<br>   - 승용전기차 : (승용) 최대 1,550만원/대      (초소형) 885만원/대<br>   - 화물전기차 : (소형특수) 최대 2,865만원/대  (소형) 2,250만원/대<br>                         (경형) 1,607만원/대           (초소형) 964만원/대<br>   <br> 5. 선정기준 : 차량 출고,등록순(보조금 지원가능 확인요청일 순)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">담양군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4671','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>140<br> (14)<br> (5)<br> (1)<br> (120)</td>
+				<td><br> (5)<br> (6)<br> (1)<br> (64)</td>
+				<td>67<br> (5)<br> (6)<br> (1)<br> (55)</td>
+				<td style="border-right:1px solid #e5e5e5;">73<br> (9)<br> (0)<br> (0)<br> (65)</td>
+				
+					<td rowspan="1">우선순위, 법인 물량 미소진시 일반물량으로 전환접수 예정<br>※ 우선순위 : 2022.9.30일까지, 중소기업 : 2022.8.31일까지 법인기관,택시 : 2022.6.30일까지 <br>    우선순위 대상자 신청이 없을 경우 일반 신청인에게 보급</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">곡성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4672','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>60<br> (3)<br> (2)<br> (0)<br> (55)</td>
+				<td><br> (3)<br> (3)<br> (0)<br> (38)</td>
+				<td>32<br> (3)<br> (2)<br> (0)<br> (27)</td>
+				<td style="border-right:1px solid #e5e5e5;">28<br> (0)<br> (0)<br> (0)<br> (28)</td>
+				
+					<td rowspan="1">총 승용차 67대 화물차 39대 <br><br>1차 승용차 30대 화물차 30대<br><br>2차 승용차 40대 화물차 10대</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">구례군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4673','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>30<br> (3)<br> (8)<br> (3)<br> (16)</td>
+				<td><br> (4)<br> (2)<br> (2)<br> (35)</td>
+				<td>30<br> (3)<br> (2)<br> (2)<br> (23)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (6)<br> (1)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">고흥군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4677','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>60<br> (11)<br> (40)<br> (0)<br> (9)</td>
+				<td><br> (0)<br> (5)<br> (0)<br> (49)</td>
+				<td>51<br> (0)<br> (5)<br> (0)<br> (46)</td>
+				<td style="border-right:1px solid #e5e5e5;">9<br> (11)<br> (35)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">보성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4678','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>56<br> (6)<br> (5)<br> (5)<br> (40)</td>
+				<td><br> (6)<br> (2)<br> (1)<br> (42)</td>
+				<td>32<br> (3)<br> (2)<br> (0)<br> (27)</td>
+				<td style="border-right:1px solid #e5e5e5;">24<br> (3)<br> (3)<br> (5)<br> (13)</td>
+				
+					<td rowspan="1">1. 신청기간 : 2022. 7. 13.(수) ~ 예산 소진 시 까지<br>2. 보급대수 : 56대 (일반 40대, 우선순위 6대, 법인,기관 5대, 택시 5대)<br>   ※ 우선순위 물량에 잔여분이 있을 경우 10월부터 일반 물량과 통합하여 보급<br>3. 지원금액<br>   - (승용) 대당 최대 1,550만원 / (초소형) 대당 885만원<br>    ※ 추가보조금 대상 : 전기 택시 구매자, 차상위 이하 계층<br>  4. 선정기준 : 차량 출고,등록순(보조금 지원가능 확인 요청일 순)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">화순군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4679','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>50<br> (5)<br> (15)<br> (5)<br> (25)</td>
+				<td><br> (6)<br> (7)<br> (4)<br> (51)</td>
+				<td>47<br> (5)<br> (3)<br> (2)<br> (37)</td>
+				<td style="border-right:1px solid #e5e5e5;">3<br> (0)<br> (12)<br> (3)<br> (0)</td>
+				
+					<td rowspan="1">- 사업 신청이 마감되었습니다 -</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">장흥군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4680','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>84<br> (14)<br> (20)<br> (7)<br> (43)</td>
+				<td><br> (0)<br> (9)<br> (4)<br> (54)</td>
+				<td>61<br> (0)<br> (9)<br> (3)<br> (49)</td>
+				<td style="border-right:1px solid #e5e5e5;">23<br> (14)<br> (11)<br> (4)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">강진군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4681','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>75<br> (5)<br> (15)<br> (5)<br> (50)</td>
+				<td><br> (2)<br> (5)<br> (2)<br> (35)</td>
+				<td>33<br> (1)<br> (4)<br> (2)<br> (26)</td>
+				<td style="border-right:1px solid #e5e5e5;">42<br> (4)<br> (11)<br> (3)<br> (24)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">해남군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4682','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>89<br> (8)<br> (6)<br> (5)<br> (70)</td>
+				<td><br> (4)<br> (6)<br> (5)<br> (47)</td>
+				<td>44<br> (4)<br> (5)<br> (3)<br> (32)</td>
+				<td style="border-right:1px solid #e5e5e5;">45<br> (4)<br> (1)<br> (2)<br> (38)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">영암군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4683','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>111<br> (11)<br> (33)<br> (11)<br> (56)</td>
+				<td><br> (4)<br> (4)<br> (1)<br> (48)</td>
+				<td>44<br> (2)<br> (2)<br> (0)<br> (40)</td>
+				<td style="border-right:1px solid #e5e5e5;">67<br> (9)<br> (31)<br> (11)<br> (16)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">무안군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4684','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>109<br> (6)<br> (52)<br> (7)<br> (44)</td>
+				<td><br> (19)<br> (6)<br> (18)<br> (124)</td>
+				<td>71<br> (10)<br> (2)<br> (12)<br> (47)</td>
+				<td style="border-right:1px solid #e5e5e5;">38<br> (0)<br> (50)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">&lt;2022년 전기자동차 민간보급사업(하반기)&gt;<br> ○ 지원대상 : 신청접수일로부터 90일 이전 무안군에 연속적으로 주소를 둔 만18세 이상 군민 또는 무안군 내 사업장이 위치한 법인 및 기업 <br> ○ 사업량 : 총 145대<br>   - 전기자동차 : 109대(일반 44, 법인기관 52, 우선 6, 택시 7)<br>   - 전기화물차 :  36대(일반 17, 법인기관 10, 우선 4, 중소기업 생산물량 5)<br>○ 접수기간 : 2022.8.9.(월) ~ 예산 소진시까지<br>○ 선정기준 : 차량 출고 등록 순(보조금 지원가능확인 요청 순)<br>    - 지원 접수순서와 상관없이 보조금 지원가능 확인 요청 순으로 대상자 선정<br>    - 확인요청일 같은 경우 접수순으로 선정<br>○ 의무운행기간 내 타 지자체로 전출, 타 지자체 거주자에게 판매 시 운행 기간별 보조금 환수율에 따라 보조금을 반납하여야 함행할 예정</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">함평군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4686','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>111<br> (0)<br> (0)<br> (0)<br> (111)</td>
+				<td><br> (1)<br> (18)<br> (1)<br> (35)</td>
+				<td>44<br> (1)<br> (16)<br> (1)<br> (26)</td>
+				<td style="border-right:1px solid #e5e5e5;">67<br> (0)<br> (0)<br> (0)<br> (85)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">영광군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4687','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>140<br> (19)<br> (48)<br> (8)<br> (65)</td>
+				<td><br> (17)<br> (12)<br> (1)<br> (107)</td>
+				<td>106<br> (16)<br> (9)<br> (1)<br> (80)</td>
+				<td style="border-right:1px solid #e5e5e5;">34<br> (3)<br> (39)<br> (7)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">장성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4688','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>67<br> (7)<br> (21)<br> (7)<br> (32)</td>
+				<td><br> (7)<br> (19)<br> (0)<br> (48)</td>
+				<td>63<br> (6)<br> (19)<br> (0)<br> (38)</td>
+				<td style="border-right:1px solid #e5e5e5;">4<br> (1)<br> (2)<br> (7)<br> (0)</td>
+				
+					<td rowspan="1">* 승용 일반물량 마감되었습니다.<br>  - 법인기관 및 승용택시 물량 : 2022. 7. 1. 부터 미소진 시 일반물량과 통합하여 보급<br>  - 화물 중소기업생산물량 : 2022. 9. 1. 부터 미소진시 일반물량과 통합하여 보급<br>  - 우선순위 물량 : 2022. 10. 1.부터 미소진 시 일반물량과 통합하여 보급<br><br>- 보급대수 : 33대(우선순위 5, 일반 7, 택시 7, 법인·기관 14)<br>- 지원대수 : 개인 및 세대 또는 법인·기관 당 1대<br>- 신청대상 : 구매 지원신청서 접수일 기준으로 장성군에 3개월 이상 거주(주소를 둔) 만18세 이상 군민<br>- 접수기간 : 2022. 5. 16.(월) 09:00 ~ 예산 소진 시 까지<br>- 대상자 선정 : 출고·등록순<br> ※ 자세한 사항은 장성군 공고 제2022-431호를 참고하시기 바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">완도군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4689','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>57<br> (2)<br> (6)<br> (2)<br> (47)</td>
+				<td><br> (0)<br> (0)<br> (1)<br> (16)</td>
+				<td>13<br> (0)<br> (0)<br> (1)<br> (12)</td>
+				<td style="border-right:1px solid #e5e5e5;">44<br> (2)<br> (6)<br> (1)<br> (35)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">진도군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4690','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 보조금 지원확인요청서 순<br>*우선: 보조금 지원확인요청서 순</td>
+				<td>58<br> (6)<br> (0)<br> (0)<br> (52)</td>
+				<td><br> (1)<br> (3)<br> (0)<br> (37)</td>
+				<td>34<br> (1)<br> (2)<br> (0)<br> (31)</td>
+				<td style="border-right:1px solid #e5e5e5;">24<br> (5)<br> (0)<br> (0)<br> (21)</td>
+				
+					<td rowspan="1">가. 사 업 량: 승용 36대<br>    ※ 상기 배정된 물량은 2022년 전기자동차 보조금 업무처리 지침에 따라 변경 될 수 있음<br>   나. 접수기간: 2022. 7. 1.(금) 10:00 ~ 사업비 소진 시까지<br>   다. 추진방법: 차량 출고·등록 순(보조금 지원가능확인요청서 등록 순)<br>    ※ 사업 신청서 접수 순서와 관계없음<br>   라. 신청자격 등: 공고문 참조</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">전남</th>
+				
+				
+					<th rowspan="1">신안군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4691','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 갯벌세계유산 보존 등을 위해 도서지역 우선 배정<br>*우선: -</td>
+				<td>62<br> (6)<br> (18)<br> (2)<br> (36)</td>
+				<td><br> (1)<br> (4)<br> (1)<br> (37)</td>
+				<td>23<br> (1)<br> (2)<br> (1)<br> (19)</td>
+				<td style="border-right:1px solid #e5e5e5;">39<br> (5)<br> (16)<br> (1)<br> (17)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">포항시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4711','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>0<br> (0)<br> (0)<br> (0)<br> (0)</td>
+				<td><br> (25)<br> (47)<br> (162)<br> (434)</td>
+				<td>645<br> (24)<br> (47)<br> (160)<br> (414)</td>
+				<td style="border-right:1px solid #e5e5e5;">0<br> (0)<br> (0)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1">**예산소진으로 인한  마감안내(추후 국비 추가 배정가능시 추가지원가능여부판단)**<br><br>*2022년 전기자동차 보급사업 보조금 업무처리지침 개정으로 인한 변경공고문(서식변경) 확인바랍니다. (2022.7.13 변경공고)<br><br>**일반, 법인, 기관, 택시 7.1일부터  물량 통합진행.<br><br>▣ 보급개요<br> . 민간보급:1,018대(승용차 741, 화물차 269, 승합차 8)<br>  -2회 시행:1차보급(상반기:2.23.수), 2차보급(하반기:7.1.금)*변동될 수 있음<br> . 1차 보급:716대(승용차 520, 화물차 190, 승합차 6)<br> . 전기승용차 물량 배정:일반(48%)/법인·기관(30%)/택 시(12%)/우선순위(10%) <br>  -1차보급(520대):250대/156대/62대/52대(2022. 6. 30일까지 출고.등록 물량 예산소진시 조기마감)   <br>  -2차보급(221대):107대/66대/26대/22대(2022. 7. 1일이후 출고.등록 물량)<br> . 신청시 필독사항:상반기 1차보급(상반기 접수 2.23.수) 접수는 마감일(2022.6.30)까지 연속하여 접수 받으며, 필히 2개월이내 <br>   출고가능한 차량만 신청·접수하여 자격부여 받고, 상반기 차량 배정물량에 대하여 출고/등록순으로 보조금 교부 마감처리.<br>**포항시외 신청 접수건은 원본 등기우편 제출 (- 우편 주소: 포항시 남구 시청로1 (대잠동) 포항시청 환경정책과 친환경 자동차팀)**</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">경주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4713','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>400<br> (40)<br> (118)<br> (40)<br> (202)</td>
+				<td><br> (21)<br> (28)<br> (49)<br> (280)</td>
+				<td>335<br> (18)<br> (24)<br> (46)<br> (247)</td>
+				<td style="border-right:1px solid #e5e5e5;">65<br> (22)<br> (94)<br> (0)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">김천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4715','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>343<br> (35)<br> (103)<br> (35)<br> (170)</td>
+				<td><br> (8)<br> (23)<br> (16)<br> (127)</td>
+				<td>138<br> (6)<br> (23)<br> (15)<br> (94)</td>
+				<td style="border-right:1px solid #e5e5e5;">205<br> (29)<br> (80)<br> (20)<br> (76)</td>
+				
+					<td rowspan="1">○접수기간 <br>   -상반기 : 2022.02.21. ~ 06.30. *예산 소진 시 조기마감<br>   -하반기 : 2022.07.01. ~ 예산 소진 시<br>○보급대수<br>   -상반기 : 승용 293대(일반120, 법인103, 택시35, 우선지원35<br>   -하반기 : 승용 50대(일반50)<br>○선정방법 : 차량 출고·등록순</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">안동시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4717','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>526<br> (0)<br> (0)<br> (0)<br> (526)</td>
+				<td><br> (4)<br> (20)<br> (12)<br> (135)</td>
+				<td>119<br> (4)<br> (16)<br> (11)<br> (88)</td>
+				<td style="border-right:1px solid #e5e5e5;">407<br> (0)<br> (0)<br> (0)<br> (438)</td>
+				
+					<td rowspan="1">★개인사업자의 경우 사업자와 개인(대표자)으로 중복지원 불가★</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">구미시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4719','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>531<br> (41)<br> (92)<br> (32)<br> (366)</td>
+				<td><br> (31)<br> (140)<br> (74)<br> (316)</td>
+				<td>466<br> (29)<br> (121)<br> (61)<br> (255)</td>
+				<td style="border-right:1px solid #e5e5e5;">65<br> (12)<br> (0)<br> (0)<br> (111)</td>
+				
+					<td rowspan="1">★ 하반기 공고부터 동의서 서식 변경되었으므로, 변경된 양식으로 작성바랍니다 ★<br>* 하반기 승용물량 : 일반 180대, 우선순위 20대 (일반물량에 법인, 택시 통합)<br>* 2022. 07. 01부터 승용 일반, 법인, 택시 물량 통합<br>* 2022. 10. 01부터 우선순위 물량 통합<br>** 시스템의 출고잔여 대수와 대상자 선정 잔여대수는 실제와 다를 수 있습니다 **</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">영주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4721','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>252<br> (0)<br> (0)<br> (0)<br> (252)</td>
+				<td><br> (1)<br> (4)<br> (8)<br> (60)</td>
+				<td>60<br> (1)<br> (4)<br> (8)<br> (47)</td>
+				<td style="border-right:1px solid #e5e5e5;">192<br> (0)<br> (0)<br> (0)<br> (205)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">영천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4723','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>180<br> (18)<br> (0)<br> (0)<br> (162)</td>
+				<td><br> (2)<br> (9)<br> (9)<br> (92)</td>
+				<td>85<br> (1)<br> (8)<br> (6)<br> (70)</td>
+				<td style="border-right:1px solid #e5e5e5;">95<br> (17)<br> (0)<br> (0)<br> (92)</td>
+				
+					<td rowspan="1">***하반기 공고 추가(7.12)***<br><br>의무운행기간 변경(수출의 경우)으로 인해 서류 양식이 바뀌었으니 공고문 참조부탁드립니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">상주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4725','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>163<br> (22)<br> (65)<br> (22)<br> (54)</td>
+				<td><br> (0)<br> (4)<br> (16)<br> (50)</td>
+				<td>56<br> (0)<br> (3)<br> (16)<br> (37)</td>
+				<td style="border-right:1px solid #e5e5e5;">107<br> (22)<br> (62)<br> (6)<br> (17)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">문경시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4728','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>103<br> (11)<br> (31)<br> (10)<br> (51)</td>
+				<td><br> (0)<br> (4)<br> (2)<br> (40)</td>
+				<td>36<br> (0)<br> (3)<br> (2)<br> (31)</td>
+				<td style="border-right:1px solid #e5e5e5;">67<br> (11)<br> (28)<br> (8)<br> (20)</td>
+				
+					<td rowspan="1">★ &apos;22.7.1. 2차 공고 게재<br>- 보급물량 : 130대 (승용 86, 화물 44) <br>- 공고 적용시기 : &apos;22.7.1.부터 <br> * 1차(상반기) 보급 물량이 마감되지 않아 2차 보급 물량을 포함하여 연속 추진<br>- 개인사업자 등 지원조건 완화</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">경산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4729','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>521<br> (53)<br> (0)<br> (0)<br> (468)</td>
+				<td><br> (11)<br> (21)<br> (27)<br> (266)</td>
+				<td>246<br> (6)<br> (18)<br> (12)<br> (210)</td>
+				<td style="border-right:1px solid #e5e5e5;">275<br> (47)<br> (0)<br> (0)<br> (258)</td>
+				
+					<td rowspan="1">접수기간 : 2022.2.18(금) ~ 예산소진시까지<br>*의무운행기간 변경(22.6.30.부터) : 2년 -&gt; 5년 (이에따라 신청서식도 변경됨)<br>*신청서 처리기한은 7일이내 (당일불가)<br>*통화량이 많으므로 전화문의는 반드시 공고문을 확인한 후 하시기 바랍니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">군위군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4772','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>53<br> (6)<br> (16)<br> (6)<br> (25)</td>
+				<td><br> (1)<br> (4)<br> (0)<br> (23)</td>
+				<td>20<br> (1)<br> (4)<br> (0)<br> (15)</td>
+				<td style="border-right:1px solid #e5e5e5;">33<br> (5)<br> (12)<br> (6)<br> (10)</td>
+				
+					<td rowspan="1">ㅇ 보급대수<br>   - 승용 : 53대(우선순위 6대, 별도배정 21대, 일반지원 25대정도)<br>ㅇ 신청대상<br>   - 구매 지원신청서 접수일 기준 연속하여 3개월 이상 군위군에 주소지를 둔 만 18세 이상<br>ㅇ 신청기간 <br>   - 승용 : 2022. 2. 15.∼ 예산 소진 시까지 <br>ㅇ 선정대상 <br>   - 승용 : 차량 출고·등록순</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">의성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4773','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>70<br> (7)<br> (0)<br> (0)<br> (63)</td>
+				<td><br> (1)<br> (4)<br> (0)<br> (49)</td>
+				<td>43<br> (1)<br> (4)<br> (0)<br> (38)</td>
+				<td style="border-right:1px solid #e5e5e5;">27<br> (6)<br> (0)<br> (0)<br> (25)</td>
+				
+					<td rowspan="1">- (신청조건) 신청일 기준 &apos;3개월 이상&apos; 의성군에 주소를 둔 자<br>- (배정물량) 승용 70대, 화물 61대   ※ 괄호: 배정물량 적용기간<br>  · 승용 90대 : 일반 35대, 우선순위(3/4분기) 7대, 법인기관(상반기) 21대, 택시(상반기) 7대<br>  · 화물 51대 : 일반 37대, 우선순위(3/4분기) 6대, 법인기관(상반기) 12대, 중소기업생산물량(8월) 6대<br>   ※기간 내 배정물량 미 집행 시 일반물량에 통합하여 지원<br>- (지원금액) 승용 1,300만원, 화물 2,000만원<br>   * 차량별 보조금 상이 <br>- 문의처 : 의성군 환경과(054-830-6193)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">청송군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4775','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>72<br> (8)<br> (0)<br> (0)<br> (64)</td>
+				<td><br> (0)<br> (2)<br> (0)<br> (15)</td>
+				<td>15<br> (0)<br> (2)<br> (0)<br> (13)</td>
+				<td style="border-right:1px solid #e5e5e5;">57<br> (8)<br> (0)<br> (0)<br> (51)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">영양군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4776','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>37<br> (4)<br> (11)<br> (3)<br> (19)</td>
+				<td><br> (0)<br> (0)<br> (1)<br> (11)</td>
+				<td>9<br> (0)<br> (0)<br> (1)<br> (8)</td>
+				<td style="border-right:1px solid #e5e5e5;">28<br> (4)<br> (11)<br> (2)<br> (11)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">영덕군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4777','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>50<br> (5)<br> (15)<br> (5)<br> (25)</td>
+				<td><br> (0)<br> (3)<br> (2)<br> (22)</td>
+				<td>18<br> (0)<br> (2)<br> (1)<br> (15)</td>
+				<td style="border-right:1px solid #e5e5e5;">32<br> (5)<br> (13)<br> (4)<br> (10)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">청도군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4782','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>80<br> (5)<br> (0)<br> (0)<br> (75)</td>
+				<td><br> (4)<br> (1)<br> (1)<br> (45)</td>
+				<td>37<br> (2)<br> (0)<br> (1)<br> (34)</td>
+				<td style="border-right:1px solid #e5e5e5;">43<br> (3)<br> (0)<br> (0)<br> (41)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">고령군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4783','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>95<br> (11)<br> (20)<br> (11)<br> (53)</td>
+				<td><br> (2)<br> (6)<br> (0)<br> (32)</td>
+				<td>35<br> (2)<br> (6)<br> (0)<br> (27)</td>
+				<td style="border-right:1px solid #e5e5e5;">60<br> (9)<br> (14)<br> (11)<br> (26)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">성주군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4784','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>118<br> (12)<br> (33)<br> (11)<br> (62)</td>
+				<td><br> (1)<br> (12)<br> (0)<br> (56)</td>
+				<td>58<br> (1)<br> (9)<br> (0)<br> (48)</td>
+				<td style="border-right:1px solid #e5e5e5;">60<br> (11)<br> (24)<br> (11)<br> (14)</td>
+				
+					<td rowspan="1">1. 추가 보급대수 : 10대 정도 (일반 9대정도)  (우선순위 1대 정도)<br><br>  ※ 차종에 따른 보조금 차등지급에 따라 예산소진시 배정물량과 관계없이 마감<br>  ※ 상반기, 하반기 미소진 물량은 추가변경공고에 연속하여 보급 추진<br><br>2. 대상자 선정방법 : 출고등록순</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">칠곡군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4785','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>278<br> (29)<br> (85)<br> (29)<br> (135)</td>
+				<td><br> (2)<br> (19)<br> (8)<br> (77)</td>
+				<td>96<br> (2)<br> (15)<br> (8)<br> (71)</td>
+				<td style="border-right:1px solid #e5e5e5;">182<br> (27)<br> (70)<br> (21)<br> (64)</td>
+				
+					<td rowspan="1">※ 법인·기관 전기승용차의 경우 지방보조금 50% 지급(택시, 소상공인 제외)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">예천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4790','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>136<br> (18)<br> (5)<br> (5)<br> (108)</td>
+				<td><br> (1)<br> (1)<br> (0)<br> (69)</td>
+				<td>36<br> (0)<br> (1)<br> (0)<br> (35)</td>
+				<td style="border-right:1px solid #e5e5e5;">100<br> (18)<br> (4)<br> (5)<br> (73)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">봉화군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4792','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>111<br> (12)<br> (34)<br> (12)<br> (53)</td>
+				<td><br> (1)<br> (1)<br> (2)<br> (16)</td>
+				<td>16<br> (0)<br> (1)<br> (2)<br> (13)</td>
+				<td style="border-right:1px solid #e5e5e5;">95<br> (12)<br> (33)<br> (10)<br> (40)</td>
+				
+					<td rowspan="1">&quot; ★대상자 선정 과정은 ☆최소 4일 이상☆ 소요<br>(당일 처리 절/대/불/가)★ &quot;<br>&quot; 출고·등록 순으로 대상자 선정 &quot;<br>&quot; 2개월 이내에 출고 가능할 경우에만 신청 가능<br>(초과 시 출고지연취소)&quot;<br>&quot; 구매(차량 가격, 보조금 등) 관련 문의는 <br>차량 판매자에게 문의 바랍니다.&quot;<br>&quot; 잔여 대수 확인은 해당 사이트 누리집 참고 바랍니다. <br>전화주셔도 똑같아요.&quot;</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">울진군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4793','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>54<br> (6)<br> (0)<br> (0)<br> (48)</td>
+				<td><br> (0)<br> (3)<br> (1)<br> (16)</td>
+				<td>20<br> (0)<br> (3)<br> (1)<br> (16)</td>
+				<td style="border-right:1px solid #e5e5e5;">34<br> (6)<br> (0)<br> (0)<br> (32)</td>
+				
+					<td rowspan="1">○ 하반기 보급물량 : 일반 26대, 우선순위 6대<br>○ 신청기간 : 2022. 7. 1. (금) ~ 2022. 12. 23.(금) 예산소진시 조기 마감<br>○ 신청대상 : 접수일 기준 3개월 이전부터 울진군 거주자<br>○ 신청자격 : 접수일 기준 3개월 이내 출고 가능한 경우<br>○ 대상자 선정 : 10일 이내 출고 가능한 경우(잔여 보조금 확인 후 지원확정 요청)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경북</th>
+				
+				
+					<th rowspan="1">울릉군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4794','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>98<br> (10)<br> (29)<br> (2)<br> (57)</td>
+				<td><br> (1)<br> (0)<br> (2)<br> (55)</td>
+				<td>45<br> (0)<br> (0)<br> (2)<br> (43)</td>
+				<td style="border-right:1px solid #e5e5e5;">53<br> (10)<br> (29)<br> (0)<br> (14)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">창원시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4812','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>945<br> (80)<br> (312)<br> (90)<br> (463)</td>
+				<td><br> (50)<br> (268)<br> (149)<br> (475)</td>
+				<td>524<br> (38)<br> (174)<br> (53)<br> (259)</td>
+				<td style="border-right:1px solid #e5e5e5;">421<br> (42)<br> (138)<br> (37)<br> (204)</td>
+				
+					<td rowspan="1">※ 창원시 전기자동차 3차 추가 공고(공고 한번 더 있을 예정)<br> - 신청기간 : 8. 17.(수) 09:00 ~ 12. 9.(금) 18:00 ※예산 소진 시 사업 종료<br> - 보급대수 : 400대 <br><br>* 판매 제조사는 신청서류를 한장의 PDF파일로 첨부해 주시길 바랍니다.<br>** 대상자 선정 이후 10일 이내에 차량 출고가 되야하며, 10일 이내 차량 미 출고시 향후 2022년, 2023년 창원시 전기자동차 보급사업에 신청 접수 배제 할 것을 알려드립니다.<br>*** 보조금 지급 대상자 확정 받지 않고 차량 출고 후 보조금 지급 신청 시 보조금 지급 불가, 보조금 지급 불가로 인한 불이익은 창원시에서 책임지지 않습니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">진주시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4817','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>800<br> (80)<br> (240)<br> (80)<br> (400)</td>
+				<td><br> (6)<br> (102)<br> (57)<br> (332)</td>
+				<td>409<br> (4)<br> (75)<br> (52)<br> (278)</td>
+				<td style="border-right:1px solid #e5e5e5;">391<br> (76)<br> (165)<br> (28)<br> (122)</td>
+				
+					<td rowspan="1">2차 공고문 확인, 원본 제출 불필요</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">통영시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4822','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>148<br> (15)<br> (44)<br> (15)<br> (74)</td>
+				<td><br> (3)<br> (5)<br> (34)<br> (85)</td>
+				<td>99<br> (3)<br> (5)<br> (25)<br> (66)</td>
+				<td style="border-right:1px solid #e5e5e5;">49<br> (12)<br> (39)<br> (0)<br> (8)</td>
+				
+					<td rowspan="1">○ 신청기간 : 2022. 2. 15.(화) 10:00 ~ 예산 소진시 까지<br>○ 총사업량 : 200대(전기승용 150, 전기화물 50)<br>   - 전기승용 : 일반75, 우선순위15, 법인·기관45, 택시15<br>   - 전기화물 : 일반30, 우선순위5, 법인·기관10, 중소기업 생산물량5<br>○ 대상자선정 : 출고등록순<br><br>* 원본제출 불필요<br>* 환경부 보조금 교부시기에 따라 입금이 지연될 수 있음<br>* 전기화물 일반물량 소진 - 법인기관(7월), 중소기업생산물량(9월) 잔여대수 발생 시 추가선정 가능</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">사천시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4824','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>108<br> (11)<br> (33)<br> (11)<br> (53)</td>
+				<td><br> (3)<br> (2)<br> (4)<br> (65)</td>
+				<td>65<br> (2)<br> (2)<br> (4)<br> (57)</td>
+				<td style="border-right:1px solid #e5e5e5;">43<br> (9)<br> (31)<br> (7)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">김해시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4825','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>521<br> (53)<br> (0)<br> (100)<br> (368)</td>
+				<td><br> (54)<br> (69)<br> (106)<br> (404)</td>
+				<td>472<br> (38)<br> (59)<br> (84)<br> (291)</td>
+				<td style="border-right:1px solid #e5e5e5;">49<br> (15)<br> (0)<br> (16)<br> (77)</td>
+				
+					<td rowspan="1">공고문 확인 바랍니다.<br>접수일:  2022.7.21. 09:00<br><br>주요변경사항<br>- 대기환경보전법 시행규칙 개정으로 신청서 변경, 변경된 신청서로 접수 하여야 함<br>- 의무운행기간 변경<br>   · 수출 목적으로 등록을 말소 하는 경우 : 5년<br>   · 그 밖의 경우 : 2년<br>- 출고기한이 만료된 기신청자는 지원신청서 재접수하여야 함<br>- (일반·법인) 물량 통합하여 진행 / 시스템상 (일반·법인) 통합 물량은 (일반 ) 대수 확인 하면 됨</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">밀양시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4827','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>523<br> (54)<br> (160)<br> (54)<br> (255)</td>
+				<td><br> (1)<br> (5)<br> (12)<br> (84)</td>
+				<td>87<br> (1)<br> (5)<br> (11)<br> (70)</td>
+				<td style="border-right:1px solid #e5e5e5;">436<br> (53)<br> (155)<br> (43)<br> (185)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">거제시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4831','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>415<br> (43)<br> (53)<br> (18)<br> (301)</td>
+				<td><br> (7)<br> (5)<br> (23)<br> (147)</td>
+				<td>144<br> (5)<br> (5)<br> (22)<br> (112)</td>
+				<td style="border-right:1px solid #e5e5e5;">271<br> (38)<br> (48)<br> (0)<br> (189)</td>
+				
+					<td rowspan="1">하반기 접수일시: 2022.7.1 10:00부터</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">양산시</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4833','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>511<br> (51)<br> (153)<br> (51)<br> (256)</td>
+				<td><br> (38)<br> (87)<br> (43)<br> (445)</td>
+				<td>481<br> (34)<br> (64)<br> (39)<br> (344)</td>
+				<td style="border-right:1px solid #e5e5e5;">30<br> (17)<br> (89)<br> (12)<br> (0)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">의령군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4872','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수순<br>*우선: 접수순</td>
+				<td>70<br> (6)<br> (10)<br> (4)<br> (50)</td>
+				<td><br> (1)<br> (0)<br> (0)<br> (29)</td>
+				<td>19<br> (1)<br> (0)<br> (0)<br> (18)</td>
+				<td style="border-right:1px solid #e5e5e5;">51<br> (5)<br> (10)<br> (4)<br> (32)</td>
+				
+					<td rowspan="1">승용 70대(2월 공고 40대)<br>* 보급 대수는 여건 및 예산 범위 내에서 변동될 수 있음</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">함안군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4873','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>150<br> (11)<br> (82)<br> (9)<br> (48)</td>
+				<td><br> (7)<br> (83)<br> (8)<br> (53)</td>
+				<td>117<br> (4)<br> (70)<br> (6)<br> (37)</td>
+				<td style="border-right:1px solid #e5e5e5;">33<br> (7)<br> (12)<br> (3)<br> (11)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">창녕군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4874','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>106<br> (16)<br> (16)<br> (6)<br> (68)</td>
+				<td><br> (2)<br> (6)<br> (1)<br> (36)</td>
+				<td>44<br> (2)<br> (6)<br> (1)<br> (35)</td>
+				<td style="border-right:1px solid #e5e5e5;">62<br> (14)<br> (10)<br> (5)<br> (33)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">고성군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4882','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>84<br> (9)<br> (17)<br> (9)<br> (49)</td>
+				<td><br> (5)<br> (2)<br> (5)<br> (50)</td>
+				<td>50<br> (5)<br> (2)<br> (4)<br> (39)</td>
+				<td style="border-right:1px solid #e5e5e5;">34<br> (4)<br> (15)<br> (5)<br> (10)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">남해군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4884','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>85<br> (7)<br> (15)<br> (8)<br> (55)</td>
+				<td><br> (10)<br> (3)<br> (4)<br> (53)</td>
+				<td>49<br> (9)<br> (2)<br> (4)<br> (34)</td>
+				<td style="border-right:1px solid #e5e5e5;">36<br> (0)<br> (13)<br> (4)<br> (21)</td>
+				
+					<td rowspan="1">*2차(추경1) 공고문 확인바랍니다.(출고등록순)<br>*추경1로 접수하시기 바랍니다. &lt;2022. 6. 16. 10:00 ~ 2022. 12. 20.&gt;<br>*원본 제출하시지 않으셔도 됩니다.</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">하동군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4885','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>100<br> (10)<br> (29)<br> (10)<br> (51)</td>
+				<td><br> (1)<br> (6)<br> (3)<br> (40)</td>
+				<td>44<br> (1)<br> (6)<br> (3)<br> (34)</td>
+				<td style="border-right:1px solid #e5e5e5;">56<br> (9)<br> (23)<br> (7)<br> (17)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">산청군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4886','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>77<br> (7)<br> (23)<br> (7)<br> (40)</td>
+				<td><br> (1)<br> (0)<br> (0)<br> (31)</td>
+				<td>27<br> (1)<br> (0)<br> (0)<br> (26)</td>
+				<td style="border-right:1px solid #e5e5e5;">50<br> (6)<br> (23)<br> (7)<br> (14)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">함양군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4887','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>90<br> (9)<br> (0)<br> (0)<br> (81)</td>
+				<td><br> (0)<br> (0)<br> (0)<br> (34)</td>
+				<td>25<br> (0)<br> (0)<br> (0)<br> (25)</td>
+				<td style="border-right:1px solid #e5e5e5;">65<br> (9)<br> (0)<br> (0)<br> (56)</td>
+				
+					<td rowspan="1"></td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">거창군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4888','Y','Y' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>93<br> (10)<br> (4)<br> (3)<br> (76)</td>
+				<td><br> (0)<br> (4)<br> (3)<br> (54)</td>
+				<td>35<br> (0)<br> (2)<br> (1)<br> (32)</td>
+				<td style="border-right:1px solid #e5e5e5;">58<br> (10)<br> (2)<br> (2)<br> (44)</td>
+				
+					<td rowspan="1">하반기 추가 물량 공고 64대(일반 54대, 우선순위 10대)</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">경남</th>
+				
+				
+					<th rowspan="1">합천군</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','4889','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 출고등록순<br>*우선: 출고등록순</td>
+				<td>149<br> (15)<br> (45)<br> (15)<br> (74)</td>
+				<td><br> (2)<br> (1)<br> (5)<br> (63)</td>
+				<td>49<br> (1)<br> (1)<br> (2)<br> (45)</td>
+				<td style="border-right:1px solid #e5e5e5;">100<br> (14)<br> (44)<br> (13)<br> (29)</td>
+				
+					<td rowspan="1">하반기 공고문 확인 바랍니다.<br><br>- 화물 :  2022. 7. 18.(월) 09:00 이후 지원대상 확인요청건만 인정</td>
+				
+			</tr>
+			
+		
+			<tr>
+				
+					<th rowspan="1">제주</th>
+				
+				
+					<th rowspan="1">제주특별자치도</th>
+				
+				<th>전기승용</th>
+				
+					<td rowspan="1">
+						
+							<a href=""  class="font_s font_b" onclick="goDownload('2022','5000','Y','N' ,'N','N', this);return false;" >다운로드</a>
+						
+					</td>
+				
+				<td>*일반: 접수+출고등록순<br>*우선: 접수+출고등록순</td>
+				<td>3500<br> (350)<br> (1400)<br> (350)<br> (1400)</td>
+				<td><br> (11)<br> (576)<br> (317)<br> (1152)</td>
+				<td>1907<br> (10)<br> (557)<br> (277)<br> (1063)</td>
+				<td style="border-right:1px solid #e5e5e5;">1593<br> (340)<br> (843)<br> (73)<br> (337)</td>
+				
+					<td rowspan="1">ㅇ 보급수량 : 5,500대<br>- 승용차 3,500(일반도민 1,400, 소상공인 및 취약계층 350, 법인 및 기관 1400, 택시 350)<br>- 화물차 2,000(일반도민 900, 중소기업 100, 1차산업 300, 법인 및 기관 300,소상공인 및 취약계층 400)</td>
+				
+			</tr>
+			
+		
+		
+		</tbody>
+	</table>
+	※ 접수대수, 출고대수 ,출고잔여대수는 공공(조달) 구매대수를 제외한 민간구매 대수만 표시합니다.<br>
+	
+	<div id="div_download" style="display:none;" class="layer_fix">
+		<table style="margin-left:auto; margin-right:auto; height:28px;">
+			<colgroup>
+			<col width="55px" />
+			<col width="55px" />
+			<col width="55px" />
+			<col width="55px" />
+			<col />
+		</colgroup>
+			<tr>
+				<td class="td_download">
+					<a href="" class="font_s font_b" onclick="goDownloadSelect('A');return false;">본공고</a>
+				</td>
+				<td class="td_download1">
+					<a href="" class="font_s font_b" onclick="goDownloadSelect('B');return false;">추경1차</a>
+				</td>
+				<td class="td_download2" style="display:none;">
+					<a href="" class="font_s font_b" onclick="goDownloadSelect('C');return false;">추경2차</a>
+				</td>
+				<td class="td_download3" style="display:none;">
+					<a href="" class="font_s font_b" onclick="goDownloadSelect('D');return false;">추경3차</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<div class='quick-menu'>
+	<a href='#' onClick="goTop(); return false;"><img src="/ps/_images/common/arrow-up.png" alt="상단표시화살표"></a><br>
+	<a href='#' onClick="goBottom(); return false;"><img src="/ps/_images/common/arrow-down.png" alt="하단표시화살표"></a>
+</div>
+
+<!--//컨텐츠 영역-->
+</div><!-- sub_cont -->
+
+	</div><!-- contents -->
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<div id="footer" style="min-width:1180px;">
+<div class="footer_cont" id="footer_cont">
+
+<div class="left">
+	<div class="footer_link">
+		<ul>
+			<li style="color:red;"><a href="#private" id="private" onclick="openSite('https://www.keco.or.kr/kr/util/privacy1_1.do','private');" title="새창으로 열림" style="color:red;font-weight:900;">개인정보처리방침</a></li>
+			<li><a href="#" id="email1" onclick="openSite('http://www.keco.or.kr/kr/util/denyemail.do','emailLaw');" title="새창으로 열림"><sub>이메일무단수집거부</sub></a></li>
+			<li><a href="#" id="pic" onclick="openSite('http://www.aea.or.kr/member/privacy.php','emailLaw');" title="새창으로 열림"><sub>영상정보처리기기 운영관리지침</sub></a></li>
+		</ul>
+	</div>
+	<div class="footer_add">
+		<p>대표 : 안병옥  사업자등록번호 :  137-82-07000  인천광역시 서구 환경로 42 (경서동 종합환경연구단지)</p>
+		<p>대표전화 : (누리집 콜센터) 1661-0970, 팩스 : 032-590-3648, (공단) 032-590-4000 </p>
+		<p>급속충전시설 이용관련문의 및 회원카드발급문의 한국자동차환경협회 : 1661-9408</p>
+		<p>Copyright KECO. All rights reserved.</p>
+	</div>
+</div>
+
+<div class="right">
+	<a href="http://www.me.go.kr" title="환경부(새창열림)" target="_blank"><img src="/portal/_images/common/footer_logo_me.png" alt="환경부 로고(새창)"/></a>
+	<a href="https://www.keco.or.kr" title="한국환경공단(새창열림)" target="_blank"><img src="/portal/_images/common/footer_logo_keco.png" alt="한국환경공단 로고(새창)" /></a>
+	<a href="http://www.aea.or.kr" title="한국자동차환경협회(새창열림)" target="_blank"><img src="/portal/_images/main/footer_logo_aea.png" alt="한국자동차환경협회" /></a>
+	<a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" >
+		<img style="width:80px;height:60px;" src="/portal/_images/common/footer_logo_webwatch2019.jpg" border="0" alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch) 2022.01.06~2023.01.05" title="WA 품질인증 마크, 웹와치(WebWatch) 2022.01.06~2023.01.05"/>
+	</a>
+</div>
+
+</div>
+</div>
+
+</div><!-- wrap -->
+
+</body>
+</html>
