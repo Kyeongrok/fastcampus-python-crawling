@@ -17,13 +17,13 @@ driver.get(url=Url)
 time.sleep(5)
 driver.find_element(By.XPATH, '//*[@id="content"]/div[2]/div[1]/div[1]/div[1]/div/div/div/a').send_keys(Keys.ENTER)
 time.sleep(3)
-image = driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/picture/img").get_attribute('src')
+image_url = driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/picture/img").get_attribute('src')
 # 안되는 이유 설명
 # request.urlretrieve(image.get_attribute('src'), "image01.jpg")
-req = Request(image, headers={'User-Agent': 'Mozilla/5.0'})
+req = Request(image_url, headers={'User-Agent': 'Mozilla/5.0'})
 f = open("text.jpg", 'wb')
-f.write(urllib.request.urlopen(req).read())
+f.write(urlopen(req).read())
 f.close()
-print(image)
+print(image_url)
 
 
