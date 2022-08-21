@@ -19,7 +19,7 @@ time.sleep(3)
 driver.find_element(By.XPATH, '//*[@id="hero"]/div[4]/form/div/span/input').send_keys('강아지')
 driver.find_element(By.XPATH, '//*[@id="hero"]/div[4]/form/div/input').click()
 time.sleep(3)
-image_area = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/div[3]/div/div/div[2]/div')
+image_area = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/div[3]/div/div[3]')
 images = image_area.find_elements(By.TAG_NAME, "img")
 path = 'crawl_img'
 try:
@@ -33,12 +33,14 @@ except OSError:
     sys.exit(0)
 image_list = []
 for image in images:
-    if image.get_attribute('data-lazy-src') is None:
+    if image.get_attribute('data-lazy') is None:
         image_list.append(image.get_attribute('src'))
+        print(image.get_attribute('src'))
     else:
-        image_list.append(image.get_attribute('data-lazy-src'))
+        image_list.append(image.get_attribute('data-lazy'))
+        print(image.get_attribute('data-lazy'))
 for img in image_list:
-    req = urllib.request.Request(img, headers={'User-Agent': 'Mozila/5.0'})
+    req = urllib.request.Request(img, headers={'User-Agent': 'Mozilla/5.0'})
     filename = img.split('/')[-1]
     savePath = path+'/'+filename
     f = open(savePath, 'wb')
@@ -47,4 +49,4 @@ for img in image_list:
 
 
 print(image_list)
-time.sleep(100)
+print('크롤 완료')
