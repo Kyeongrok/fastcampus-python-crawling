@@ -22,6 +22,7 @@ if __name__ == "__main__":
     url_arr = ["https://openapi.naver.com/v1/search/blog?query=",
                "https://openapi.naver.com/v1/search/cafearticle?query=",
                "https://openapi.naver.com/v1/search/image?query=",
+               "https://openapi.naver.com/v1/search/webkr?query=",
                "https://openapi.naver.com/v1/search/shop?query="
                ]
     for url in url_arr:
