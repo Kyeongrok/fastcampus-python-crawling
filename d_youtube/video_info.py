@@ -6,7 +6,7 @@
 # 4. 내 채널에서 재생목록 생성하기
 
 from googleapiclient.discovery import build
-import os
+import os, json
 
 
 class YoutubeInfoApi:
@@ -71,6 +71,22 @@ class YoutubeInfoApi:
         infos.append(result['statistics']['commentCount'])
 
 
+    def get_video_comments(self, v_id):
+        v_comments = self.api_obj.commentThreads().list(
+            part='snippet,replies',
+            videoId=v_id,
+            maxResults=10).execute()
+
+        r = []
+        items = v_comments.get('items', [])
+        print('items:', json.dumps(items))
+        for result in items:
+            snippet = result['snippet']['topLevelComment']['snippet']
+            r.append({"authorDisplayName":snippet['authorDisplayName'], "textDisplay":snippet['textDisplay']})
+
+        return r
+
+
 if __name__ == '__main__':
     # print(get_channel_info("girl's generation"))
     # channel_id = get_channel_info("girl's generation")[0]
@@ -79,8 +95,3 @@ if __name__ == '__main__':
     v_list = api.get_videos_list('슈카월드')
     print(len(v_list))
     print(v_list)
-    # # 첫번째 videoId 가져오기
-    # v_id = list(v_list[0].values())[0]
-    # get_video_info(v_id)
-    # # print(v_list)
-    # # print(list(v_list[0].values()))
