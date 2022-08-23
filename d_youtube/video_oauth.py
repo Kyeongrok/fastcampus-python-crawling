@@ -6,29 +6,42 @@
 # 4. 내 채널에서 재생목록 생성하기
 
 from googleapiclient.discovery import build
+from google_auth_oauthlib import flow
 import os, json
 
 
-class YoutubeInfoApi:
+class YoutubeApi:
     youtube_api = None
+    youtube_auth_api = None
+    secret_filename = ""
 
-    def __init__(self, api_key, creditial_filename):
+    def __init__(self, api_key, secret_filename):
         self.youtube_api = build('youtube', 'v3', developerKey=api_key)
+        self.secret_filename = secret_filename
 
+    def set_youtube_auth_api(self):
+        os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+        scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
+        flow_obj = flow.InstalledAppFlow.from_client_secrets_file(
+            self.secret_filename, scopes
+        )
+        credentials = flow_obj.run_local_server()
+        self.youtube_auth_api = build(
+            "youtube", "v3", credentials=credentials
+        )
 
     def get_channel_info(self, q):
-        get_search_list = self.youtube_api.search().list(
+        search_list = self.youtube_api.search().list(
             q=q,
             order='relevance',
             part='snippet',
             maxResults=10
         ).execute()
         channels = {}
-        for result in get_search_list.get('items', []):
+        for result in search_list.get('items', []):
             # print(result)
             if result['id']['kind'] == "youtube#channel":
-                # print(result['id'])
-                # print(result['id']['channelId'] + result['snippet']['title'])
+                print(result)
                 channels[result['snippet']['title']] = result['id']['channelId']
         # print(channels)
         channels_id = list(channels.keys())[0]
@@ -71,7 +84,6 @@ class YoutubeInfoApi:
         infos.append(result['statistics']['likeCount'])
         infos.append(result['statistics']['commentCount'])
 
-
     def get_video_comments(self, v_id):
         v_comments = self.youtube_api.commentThreads().list(
             part='snippet,replies',
@@ -83,16 +95,44 @@ class YoutubeInfoApi:
         print('items:', json.dumps(items))
         for result in items:
             snippet = result['snippet']['topLevelComment']['snippet']
-            r.append({"authorDisplayName":snippet['authorDisplayName'], "textDisplay":snippet['textDisplay']})
+            r.append({"authorDisplayName": snippet['authorDisplayName'], "textDisplay": snippet['textDisplay']})
 
         return r
 
+    def send_comment(self, v_id, text):
+        if self.youtube_auth_api is None:
+            self.set_youtube_auth_api()
+
+        insert_comment = self.youtube_auth_api.commentThreads().insert(
+            part='snippet',
+            body={
+                "snippet": {
+                    "videoId": v_id,
+                    "topLevelComment": {
+                        "snippet": {
+                            "textOriginal": text
+                        }
+                    }
+                }
+            }
+        )
+        response = insert_comment.execute()
+        print(response)
+
+    def get_playlist(self, ch_id):
+        pl_list = []
+        response = self.youtube_api.playlists().list(
+            channelId=ch_id,
+            part='snippet',
+            maxResults=10
+        ).execute()
+        print(response)
+
 
 if __name__ == '__main__':
-    # print(get_channel_info("girl's generation"))
-    # channel_id = get_channel_info("girl's generation")[0]
-    api_key = os.getenv("YOUTUBE_API_KEY")
-    api = YoutubeInfoApi(api_key=api_key)
-    v_list = api.get_videos_list('슈카월드')
-    print(len(v_list))
-    print(v_list)
+    api_key_1 = os.getenv("YOUTUBE_API_KEY")
+    api = YoutubeApi(api_key=api_key_1, secret_filename="client_secret_rrr.json")
+    # v_list = api.get_videos_list('슈카월드')
+    # play_lists = api.get_playlist("")
+    r = api.get_channel_info("")
+    print(r)
