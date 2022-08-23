@@ -1,7 +1,7 @@
 from googleapiclient.discovery import build
 import googleapiclient.errors
 import google_auth_oauthlib.flow
-from video_info import get_channel_info
+from video_info import YoutubeApi
 import video_info
 import os
 
@@ -19,6 +19,7 @@ api_obj = build('youtube', 'v3', developerKey=api_key)
 youtube = googleapiclient.discovery.build(
     'youtube', 'v3', credentials=credentials
 )
+youtube_api = YoutubeApi(api_key)
 
 
 # 이거 막 돌리다보면 youtube쪽에서 막을 수도 있음

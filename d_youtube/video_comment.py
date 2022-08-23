@@ -3,8 +3,12 @@ from googleapiclient.discovery import build
 import googleapiclient.errors
 import google_auth_oauthlib.flow
 import os
-from video_info import get_videos_list
+from video_info import YoutubeApi
+
 api_key = os.getenv("YOUTUBE_API_KEY")
+
+youtube_api = YoutubeApi(api_key)
+
 api_obj = build('youtube', 'v3', developerKey=api_key)
 api_server_name = "youtube"
 # 웹 어플리케이션
@@ -20,7 +24,7 @@ credentials = flow.run_console()
 
 
 def get_video_comments(q):
-    v_list = get_videos_list(q)
+    v_list = youtube_api.get_videos_list(q)
     v_id = list(v_list[0].values())[0]
     v_comments = api_obj.commentThreads().list(
         part='snippet,replies',
@@ -31,7 +35,7 @@ def get_video_comments(q):
 
 
 def insert_video_comment(q, text):
-    v_list = get_videos_list(q)
+    v_list = youtube_api.get_videos_list(q)
     v_id = list(v_list[0].values())[0]
     youtube = googleapiclient.discovery.build(
         api_server_name, "v3", credentials=credentials
