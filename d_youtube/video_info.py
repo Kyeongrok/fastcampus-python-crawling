@@ -9,7 +9,7 @@ from googleapiclient.discovery import build
 import os
 
 
-class YoutubeApi:
+class YoutubeInfoApi:
     api_obj = None
 
     def __init__(self, api_key):
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     # print(get_channel_info("girl's generation"))
     # channel_id = get_channel_info("girl's generation")[0]
     api_key = os.getenv("YOUTUBE_API_KEY")
-    api = YoutubeApi(api_key=api_key)
+    api = YoutubeInfoApi(api_key=api_key)
     v_list = api.get_videos_list('슈카월드')
     print(len(v_list))
     print(v_list)

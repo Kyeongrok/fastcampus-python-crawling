@@ -3,11 +3,11 @@ from googleapiclient.discovery import build
 import googleapiclient.errors
 import google_auth_oauthlib.flow
 import os
-from video_info import YoutubeApi
+from video_info import YoutubeInfoApi
 
 api_key = os.getenv("YOUTUBE_API_KEY")
 
-youtube_api = YoutubeApi(api_key)
+youtube_api = YoutubeInfoApi(api_key)
 
 api_obj = build('youtube', 'v3', developerKey=api_key)
 # 웹 어플리케이션
@@ -19,7 +19,7 @@ os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
     client_secrets_file, scopes
 )
-credentials = flow.run_console()
+credentials = flow.run_local_server()
 
 
 def get_video_comments(v_id):
@@ -57,5 +57,5 @@ if __name__ == '__main__':
     v_list = youtube_api.get_videos_list(query)
     v_id = list(v_list[0].values())[0]
     insert_video_comment(v_id, '유익한 내용 이네요.')
-    get_video_comments(v_id, '슈카월드')
+    get_video_comments(v_id)
 
