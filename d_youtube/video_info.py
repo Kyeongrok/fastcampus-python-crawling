@@ -15,7 +15,6 @@ class YoutubeApi:
     def __init__(self, api_key):
         self.api_obj = build('youtube', 'v3', developerKey=api_key)
 
-
     def get_channel_info(self, q):
         get_search_list = self.api_obj.search().list(
             q=q,
