@@ -12,7 +12,7 @@ import os, json
 class YoutubeInfoApi:
     youtube_api = None
 
-    def __init__(self, api_key, creditial_filename):
+    def __init__(self, api_key):
         self.youtube_api = build('youtube', 'v3', developerKey=api_key)
 
 
@@ -55,28 +55,29 @@ class YoutubeInfoApi:
         return videos
 
     def get_video_info(self, video_id):
-        video_lifo = self.youtube_api.videos().list(
+        video_info = self.youtube_api.videos().list(
             part='snippet, statistics',
             id=video_id,
         ).execute()
         infos = []
-        result = video_lifo.get('items', [])[0]
-        print(result['snippet']['title'] + ' ' + result['snippet']['channelId'])
-        print(result['statistics']['viewCount'])
-        print(result['statistics']['likeCount'])
-        print(result['statistics']['commentCount'])
-        infos.append(result['snippet']['title'])
-        infos.append(result['snippet']['channelId'])
-        infos.append(result['statistics']['viewCount'])
-        infos.append(result['statistics']['likeCount'])
-        infos.append(result['statistics']['commentCount'])
+        print(video_info)
+        for result in video_info.get('items', []):
+            print(result['snippet']['title'] + ' ' + result['snippet']['channelId'])
+            print(result['statistics']['viewCount'])
+            print(result['statistics']['likeCount'])
+            print(result['statistics']['commentCount'])
+            infos.append(result['snippet']['title'])
+            infos.append(result['snippet']['channelId'])
+            infos.append(result['statistics']['viewCount'])
+            infos.append(result['statistics']['likeCount'])
+            infos.append(result['statistics']['commentCount'])
 
 
-    def get_video_comments(self, v_id):
+    def get_video_comments(self, v_id, max_results):
         v_comments = self.youtube_api.commentThreads().list(
             part='snippet,replies',
             videoId=v_id,
-            maxResults=10).execute()
+            maxResults=max_results).execute()
 
         r = []
         items = v_comments.get('items', [])
@@ -93,6 +94,10 @@ if __name__ == '__main__':
     # channel_id = get_channel_info("girl's generation")[0]
     api_key = os.getenv("YOUTUBE_API_KEY")
     api = YoutubeInfoApi(api_key=api_key)
-    v_list = api.get_videos_list('슈카월드')
-    print(len(v_list))
-    print(v_list)
+    # v_list = api.get_videos_list('슈카월드')
+    # print(len(v_list))
+    # print(v_list)
+    r_video = api.get_video_info("M5TaCSTJgd8,EjTGSYCWmEo")
+    # r = api.get_video_comments("M5TaCSTJgd8")
+    # print(r)
+    print(r_video)

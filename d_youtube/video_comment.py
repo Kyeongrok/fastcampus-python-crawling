@@ -59,7 +59,6 @@ if __name__ == '__main__':
     api_key = os.getenv("YOUTUBE_API_KEY")
     youtube_auth_api = YoutubeInfoApi(api_key)
     youtube_comment_api = YoutubeCommentApi("client_secret_rrr.json")
-    query = "슈카월드"
     v_id = "RGLvq6PNXGo"
     # youtube_comment_api.send_comment(v_id, '흥미롭군요 ㅎㅎㅎㅎ')
     # r = youtube_auth_api.get_video_comments(v_id)
